@@ -1,12 +1,9 @@
 /*!
-Theme Name: Slyfox Threads
-Theme URI: http://www.dominicmcphee.com
-Github Theme URI: https://github.com/dfmcphee/wp-bootstrap-sass
-Description: A simple WordPress theme built using Sass and Bootstrap 3.0
-Author: Dominic McPhee
-Author URI: http://www.dominicmcphee.com
-License: GNU General Public License v2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Theme Name: SimplyStudio
+Theme URI: http://www.simplystudio.com
+Description: Custom theme built using Sass and Bootstrap 3.0
+Author: Andrew Brown
+Author URI: http://www.heyimandrew.com
 Version: v1.0.5
 */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -5024,6 +5021,11 @@ td.visible-print {
 body {
   background: #fff; }
 
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -5033,7 +5035,9 @@ img {
 
 @media (min-width: 768px) {
   .navbar-nav {
-    float: right; } }
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%; } }
 .carousel .carousel-inner .container {
   position: relative; }
 .carousel .carousel-inner .carousel-caption {

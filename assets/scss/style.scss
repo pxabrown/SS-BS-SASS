@@ -1,12 +1,9 @@
 /*!
-Theme Name: Slyfox Threads
-Theme URI: http://www.dominicmcphee.com
-Github Theme URI: https://github.com/dfmcphee/wp-bootstrap-sass
-Description: A simple WordPress theme built using Sass and Bootstrap 3.0
-Author: Dominic McPhee
-Author URI: http://www.dominicmcphee.com
-License: GNU General Public License v2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Theme Name: SimplyStudio
+Theme URI: http://www.simplystudio.com
+Description: Custom theme built using Sass and Bootstrap 3.0
+Author: Andrew Brown
+Author URI: http://www.heyimandrew.com
 Version: v1.0.5
 */
 
@@ -30,7 +27,9 @@ img {
 
 @media (min-width: $screen-tablet) {
     .navbar-nav {
-      float: right;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
     }
 }
 

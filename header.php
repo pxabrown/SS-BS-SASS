@@ -23,7 +23,7 @@
 	<div id="wrap">
     
 	<?php $nav_class = (get_theme_mod('navbar_inverse') ? 'navbar-inverse' : 'navbar-default'); ?>
-  <nav class="navbar <?php echo $nav_class ?> navbar-static-top" role="navigation">
+  <nav class="navbar <?php echo $nav_class ?> navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container">
         <div class="row">
