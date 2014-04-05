@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
@@ -74,4 +74,34 @@
     <?php echo BootstrapCarousel::get_gallery($options['carousel_id'], 'main-carousel'); ?>
   <?php } ?>
   
+<div class="big-wrapper">
+ <div class="parallax-section-1"></div>
+</div>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   <div id="container" class="container">
+  
+  

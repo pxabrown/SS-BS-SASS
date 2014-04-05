@@ -8,6 +8,12 @@
     </div>
 	</footer>
 
+<script>
+    $('.parallax-section-1').parallax({
+	    speed : 0.40
+    });
+</script>
+    
   <?php wp_footer(); ?>
 
 </body>
