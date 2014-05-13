@@ -1,7 +1,7 @@
-# WooCom Sass Bootstrap Theme
-v1.0.5
+# SS Sass Bootstrap 3 WordPress Theme
+v1.0.0
 
-A simple WordPress theme built using Sass and Bootstrap 3.1
+A Custom WordPress theme built using Sass and Bootstrap 3.1
 
 ## How to use the built in Carousel
 * Click Carousels-> Add New
