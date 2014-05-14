@@ -12,6 +12,9 @@
     $('.parallax-section-1').parallax({
 	    speed : 0.40
     });
+    $('.testimonial-section').parallax({
+	    speed : 0.40
+    });
 </script>
     
   <?php wp_footer(); ?>

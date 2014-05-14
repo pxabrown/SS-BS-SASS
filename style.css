@@ -5022,19 +5022,48 @@ body {
   background: #fff; }
 
 .big-wrapper {
-  margin: 89px 0 0; }
-
-.parallax-section-1 {
-  height: 450px;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: url("http://cdn2.hubspot.net/hub/292236/file-281983742-jpg/assets/img/HUGNH-TUGS-BLURRED.jpg");
-  /* Mobile Parallax Photo */ }
-  @media (max-width: 650px) {
-    .parallax-section-1 {
-      background-image: url("http://cdn2.hubspot.net/hub/292236/file-281983742-jpg/assets/img/HUGNH-TUGS-BLURRED.jpg");
-      height: 300px; } }
+  margin: 0; }
+  .big-wrapper .parallax-section-1 {
+    height: 1019px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("./images/hero-header-josh.jpg");
+    /* Mobile Parallax Photo */ }
+    @media (max-width: 650px) {
+      .big-wrapper .parallax-section-1 {
+        background-image: url("./images/hero-header-josh.jpg");
+        height: 300px; } }
+  .big-wrapper .video-section {
+    height: 1666px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("./images/para-video-section.jpg");
+    /* Mobile Photo */ }
+    @media (max-width: 650px) {
+      .big-wrapper .video-section {
+        background-image: url("./images/para-video-section.jpg");
+        height: 300px; } }
+  .big-wrapper .features-section {
+    height: 1220px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("./images/features-section.jpg");
+    /* Mobile Photo */ }
+    @media (max-width: 650px) {
+      .big-wrapper .features-section {
+        background-image: url("./images/features-section.jpg");
+        height: 300px; } }
+  .big-wrapper .testimonial-section {
+    height: 671px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("./images/testimonial-section.jpg");
+    /* Mobile Photo */ }
+    @media (max-width: 650px) {
+      .big-wrapper .testimonial-section {
+        background-image: url("./images/testimonial-section.jpg");
+        height: 300px; } }
 
 img {
   max-width: 100%;

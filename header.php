@@ -76,6 +76,9 @@
   
 <div class="big-wrapper">
  <div class="parallax-section-1"></div>
+  <div class="video-section"></div>
+  <div class="features-section"></div>
+  <div class="testimonial-section"></div>
 </div>
   
   
