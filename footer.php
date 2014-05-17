@@ -7,15 +7,17 @@
 		<p>&copy; <?php echo date( "Y" ); echo " "; bloginfo( 'name' ); ?></p>
     </div>
 	</footer>
-
+	<a href="#" class="navbar-brand scroll-top">Scroll Up</a>
 <script>
-    $('.parallax-section-1').parallax({
+    $('.parallax-manage-biz-section').parallax({
 	    speed : 0.40
     });
-    $('.testimonial-section').parallax({
+    $('.price-section').parallax({
 	    speed : 0.40
     });
+
 </script>
+
     
   <?php wp_footer(); ?>
 

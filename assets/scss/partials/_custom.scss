@@ -1,28 +1,149 @@
+/* *********************************
+           Variables
+  ********************************** */
+$navbar-height: 50px;
+$big-logo-padding: 15px; 
+$small-logo-padding: 2px; 
+$white: #fff;
+$black: #000;
+
+// GENERAL THEME STUFF
 body {
-	background: #fff;
+    background: $white;
 }
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'aliquamultralight';
+}
+h1 {
+    font-size: 69px;
+    letter-spacing: 4px;
+    font-weight: normal;
+    margin-bottom: 50px;
+    @media (max-width: 650px) {
+        font-size: 27px;
+        font-family: 'aliquamultralight';
+        margin-bottom: 20px;
+    }
+    .para-text {
+        left: 0;
+        top: 45px;
+        width: 100%;
+        z-index: 1;
+    }
+}
+.centered {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @media (min-width: 768px) {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width: 768px) {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+// GENERAL THEME STUFF
+
 .big-wrapper {
-	margin: 0;
-	.parallax-section-1 {
-        height: 1019px;
+    margin: 0;
+    .parallax-manage-biz-section {
+        height: 863px;
+        text-align: center;
         background-position: center top;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        //background-attachment: fixed;
         background-image: url('./images/hero-header-josh.jpg');
              /* Mobile Parallax Photo */
         @media (max-width: 650px) {
-            background-image: url('./images/hero-header-josh.jpg'); height: 300px;
+            background-image: url('./images/small-screen/smallest-screen-manage-section.jpg'); 
+            height: 745px;
+        }
+        .easily-manage {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            text-align: center;
+            width: 50%;
+            @media (max-width: 650px) {
+                width: 90%;
+                margin-top: 40px;
+            }
+            .thick-divider {
+                border-top: 5px solid #6f6666;
+            }
+            .our-family-of-users p {
+                color: #4F4F4F;
+                font-family: 'aliquamultralight';
+                font-size: 30px;
+                font-style: italic;
+                letter-spacing: 2px;
+                margin: 60px auto;
+                width: 60%;
+                @media (max-width: 650px) {
+                    width: 95%;
+                    font-size: 18px;
+                    font-style: normal;
+                    margin: 30px auto;
+                }
+            }
         }
     }
     .video-section {
         height: 1666px;
+        padding-top: 114px;
+        text-align: center;
         background-position: center top;
         background-repeat: no-repeat;
+        //background-attachment: fixed;
         background-image: url('./images/para-video-section.jpg');
              /* Mobile Photo */
         @media (max-width: 650px) {
             background-image: url('./images/para-video-section.jpg'); height: 300px;
         }
+        h1 {
+            margin: 0px;
+            padding: 0px;
+        }
+        h3 {
+            color: $white;
+            font-style: normal;
+            font-weight: 600;
+        }
+        .video {
+            background: url();
+            margin:100px auto;
+        }
+        .short-video-p {
+            color: #6f6666;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            font-style: italic;
+            letter-spacing: 2px;
+            margin: 0px auto;
+            width: 60%;
+            @media (max-width: 650px) {
+                width: 95%;
+                font-size: 18px;
+                font-style: normal;
+                margin: 30px auto;
+            }
+        }
+        .get-started {
+            p {
+                color: $white;
+                font-size: 14px;
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal; 
+            }
+        }
+        
     
     }
     .features-section {
@@ -47,4 +168,157 @@ body {
         }
     
     }
+    .price-section { 
+        height: 2197px;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url('./images/price-section.jpg');
+             /* Mobile Photo */
+        @media (max-width: 650px) {
+            background-image: url('./images/price-section.jpg'); height: 300px;
+        }
+    
+    }
+    .btn-cta {
+        background: #f6436b;
+        color: $white;
+        text-transform: uppercase;
+        font-family: 'aliquamultralight';
+        letter-spacing: 3px;
+        padding: 10px 20px;
+    }
 }
+#wrap {
+    .navi {
+        height: 106px;
+        @media (max-width: 650px) {
+            height: auto;
+        }
+    } 
+}
+
+
+/* *********************************
+   Some Style Overrides on Bootstrap
+  ********************************** */
+  
+.small-nav {
+    background: rgba(255,255,255,0.5);
+}
+.navbar-inverse {
+    background: rgba(62,195,246,0);
+    border-bottom: none;
+    .navbar-toggle {
+        :hover {
+            background-color: none;
+        }
+        :focus {
+            background-color: none;
+        }
+        .icon-bar {
+            background-color: #8F8F8F;
+        }
+    }
+}
+.navbar-inverse .navbar-toggle {
+  border: none;
+  border-color: none;
+}
+.navbar-toggle {
+    background: none;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+   border-color: transparent;
+  @media (max-width: 767px) {
+    background: rgba(255,255,255,0.75);
+  }
+}
+
+
+.navbar-inverse .navbar-nav > li > a {
+color: black;
+  
+
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+color: #22F;
+
+}
+ul.nav {
+}
+
+/* *********************************
+           Toolbar Logo
+  ********************************** */
+.small-logo-container {
+    padding-top: $navbar-height;
+    height: $navbar-height;
+    overflow: hidden;
+  }
+
+.small-logo {
+  color: white;
+  font-size: 2.5em;
+  padding-bottom: $small-logo-padding;
+}
+
+/* *********************************
+           Big Logo
+  ********************************** */
+.big-logo-row {
+  background: $white;
+  .big-logo-container {
+    padding-top: 0px;
+  }
+}
+
+
+
+
+
+
+// FONTS
+
+@font-face {
+    font-family: 'aliquamultralight';
+    src: url('../assets/fonts/aliquam-webfont.eot');
+    src: url('./assets/fonts/aliquam-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/aliquam-webfont.woff') format('woff'),
+         url('./assets/fonts/aliquam-webfont.ttf') format('truetype'),
+         url('./assets/fonts/aliquam-webfont.svg#aliquamultralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aliquamregular';
+    src: url('../assets/fonts/aliquamreg-webfont.eot');
+    src: url('../assets/fonts/aliquamreg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/aliquamreg-webfont.woff') format('woff'),
+         url('../assets/fonts/aliquamreg-webfont.ttf') format('truetype'),
+         url('../assets/fonts/aliquamreg-webfont.svg#aliquamregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aliquamitalic';
+    src: url('../assets/fonts/aliquamrit-webfont.eot');
+    src: url('../assets/fonts/aliquamrit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/aliquamrit-webfont.woff') format('woff'),
+         url('../assets/fonts/aliquamrit-webfont.ttf') format('truetype'),
+         url('../assets/fonts/aliquamrit-webfont.svg#aliquamitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
