@@ -1,3 +1,5 @@
+	<a href="#" class="navbar-brand scroll-top hideme">Scroll Up</a>
+
 	</div> <!-- /.container -->
   </div> <!-- /#wrap -->
   <?php $footer_class = (get_theme_mod('footer_inverse') ? 'inverse' : 'default'); ?>
@@ -7,18 +9,7 @@
 		<p>&copy; <?php echo date( "Y" ); echo " "; bloginfo( 'name' ); ?></p>
     </div>
 	</footer>
-	<a href="#" class="navbar-brand scroll-top">Scroll Up</a>
-<script>
-    $('.parallax-manage-biz-section').parallax({
-	    speed : 0.40
-    });
-    $('.price-section').parallax({
-	    speed : 0.40
-    });
 
-</script>
-
-    
   <?php wp_footer(); ?>
 
 </body>

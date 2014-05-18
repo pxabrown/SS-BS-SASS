@@ -155,16 +155,25 @@ function mb_scripts() {
 	if ( !is_admin() ) {
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, NULL );
-    wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/js/vendor/bootstrap.min.js', array('jquery'), false, true );
+        //LOAD BOOTSTRAP
+        wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/js/vendor/bootstrap.min.js', array('jquery'), false, true );
 		wp_enqueue_script('bootstrap-hover', get_template_directory_uri() . '/assets/js/vendor/twitter-bootstrap-hover-dropdown.min.js', array('jquery', 'bootstrap'), false, true );
-		wp_enqueue_script('customscripts', get_template_directory_uri() . '/assets/js/source/main.js', array('jquery'), false, true );
-		wp_enqueue_script('customscripts', get_template_directory_uri() . '/assets/js/source/parallax-plugin.js', array('jquery'), false, true );
+		//MAIN SCRIPTS
+		wp_enqueue_script('mainscripts', get_template_directory_uri() . '/assets/js/source/main.js', array('jquery'), false, true );
+		//PARALLAX
+		wp_enqueue_script('parallax', get_template_directory_uri() . '/assets/js/source/parallax-plugin.js', array('jquery'), false, true );
 		if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
         function my_jquery_enqueue() {
-           wp_deregister_script('jquery');
-           wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null);
-           wp_enqueue_script('jquery');
-}		
+        //LOAD JQUERY
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null);
+        //LOAD FLEXSLIDER   
+        wp_enqueue_script('jquery');
+        wp_enqueue_script('flexslider', get_template_directory_uri() . '/assets/flexslider/jquery.flexslider.js', array('jquery'), false, true );
+           
+        wp_enqueue_style( 'my-style', get_template_directory_uri() . '/assets/flexslider/flexslider.css', false, '1.0', 'all' ); // Inside a parent theme           
+           
+           }		
 	}
 }
 

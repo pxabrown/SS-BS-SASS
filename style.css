@@ -5031,7 +5031,7 @@ h1 {
   font-size: 69px;
   letter-spacing: 4px;
   font-weight: normal;
-  margin-bottom: 50px; }
+  margin-bottom: 40px; }
   @media (max-width: 650px) {
     h1 {
       font-size: 27px;
@@ -5099,8 +5099,8 @@ h1 {
             font-style: normal;
             margin: 30px auto; } }
   .big-wrapper .video-section {
-    height: 1666px;
-    padding-top: 114px;
+    height: 1250px;
+    padding-top: 80px;
     text-align: center;
     background-position: center top;
     background-repeat: no-repeat;
@@ -5110,16 +5110,20 @@ h1 {
       .big-wrapper .video-section {
         background-image: url("./images/para-video-section.jpg");
         height: 300px; } }
+    .big-wrapper .video-section .video img {
+      cursor: pointer; }
     .big-wrapper .video-section h1 {
       margin: 0px;
       padding: 0px; }
     .big-wrapper .video-section h3 {
       color: white;
+      font-size: 42px;
       font-style: normal;
-      font-weight: 600; }
+      font-weight: 600;
+      text-shadow: 0 0 5px #000000; }
     .big-wrapper .video-section .video {
       background: url();
-      margin: 100px auto; }
+      margin: 90px auto 50px; }
     .big-wrapper .video-section .short-video-p {
       color: #6f6666;
       font-family: 'Open Sans', sans-serif;
@@ -5136,11 +5140,15 @@ h1 {
           margin: 30px auto; } }
     .big-wrapper .video-section .get-started p {
       color: white;
-      font-size: 14px;
-      font-family: 'Open Sans', sans-serif;
-      font-style: normal; }
+      font-family: 'Open Sans',sans-serif;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: bold;
+      letter-spacing: 0px;
+      text-shadow: 0px 0px 4px #000; }
   .big-wrapper .features-section {
     height: 1220px;
+    padding: 70px 0 0;
     background-position: center top;
     background-repeat: no-repeat;
     background-image: url("./images/features-section.jpg");
@@ -5149,8 +5157,19 @@ h1 {
       .big-wrapper .features-section {
         background-image: url("./images/features-section.jpg");
         height: 300px; } }
+    .big-wrapper .features-section h1 {
+      text-align: center; }
+    .big-wrapper .features-section .features {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto; }
+    .big-wrapper .features-section .row-1 {
+      margin-bottom: 50px; }
+    .big-wrapper .features-section .row-2 {
+      margin-top: 50px; }
   .big-wrapper .testimonial-section {
     height: 671px;
+    padding: 70px 0 0;
     background-position: center top;
     background-repeat: no-repeat;
     background-image: url("./images/testimonial-section.jpg");
@@ -5159,6 +5178,13 @@ h1 {
       .big-wrapper .testimonial-section {
         background-image: url("./images/testimonial-section.jpg");
         height: 300px; } }
+    .big-wrapper .testimonial-section .thick-divider {
+      border-top: 5px solid #6f6666; }
+    .big-wrapper .testimonial-section .flexslider .slides li {
+      font-family: 'aliquamultralight';
+      font-size: 37px;
+      letter-spacing: 2px;
+      padding-left: 160px; }
   .big-wrapper .price-section {
     height: 2197px;
     background-position: center top;
@@ -5170,13 +5196,45 @@ h1 {
       .big-wrapper .price-section {
         background-image: url("./images/price-section.jpg");
         height: 300px; } }
+  .big-wrapper .faq-section {
+    height: 600px;
+    padding: 70px 0 0;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("./images/");
+    /* Mobile Photo */ }
+    @media (max-width: 650px) {
+      .big-wrapper .faq-section {
+        background-image: url("./images/");
+        height: 300px; } }
+    .big-wrapper .faq-section .thick-divider {
+      border-top: 5px solid #6f6666; }
+    .big-wrapper .faq-section h3 {
+      font-size: 18px;
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: left;
+      padding: 0px;
+      margin-bottom: 10px; }
+    .big-wrapper .faq-section p {
+      text-align: left; }
   .big-wrapper .btn-cta {
-    background: #f6436b;
+    background: none repeat scroll 0 0 #F6436B;
     color: white;
-    text-transform: uppercase;
-    font-family: 'aliquamultralight';
-    letter-spacing: 3px;
-    padding: 10px 20px; }
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    padding: 10px 40px;
+    text-transform: uppercase; }
+  .big-wrapper .hideme {
+    opacity: 0; }
+  .big-wrapper .keepscrolling {
+    margin-top: 100px;
+    background: black; }
 
 #wrap .navi {
   height: 106px; }

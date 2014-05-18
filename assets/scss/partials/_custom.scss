@@ -18,7 +18,7 @@ h1 {
     font-size: 69px;
     letter-spacing: 4px;
     font-weight: normal;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     @media (max-width: 650px) {
         font-size: 27px;
         font-family: 'aliquamultralight';
@@ -96,8 +96,8 @@ h1 {
         }
     }
     .video-section {
-        height: 1666px;
-        padding-top: 114px;
+        height: 1250px;
+        padding-top: 80px;
         text-align: center;
         background-position: center top;
         background-repeat: no-repeat;
@@ -107,18 +107,25 @@ h1 {
         @media (max-width: 650px) {
             background-image: url('./images/para-video-section.jpg'); height: 300px;
         }
+        .video {
+            img {
+                cursor: pointer;
+            }
+        }
         h1 {
             margin: 0px;
             padding: 0px;
         }
         h3 {
             color: $white;
+            font-size: 42px;
             font-style: normal;
             font-weight: 600;
+            text-shadow: 0 0 5px #000000;
         }
         .video {
             background: url();
-            margin:100px auto;
+            margin:90px auto 50px;
         }
         .short-video-p {
             color: #6f6666;
@@ -138,16 +145,18 @@ h1 {
         .get-started {
             p {
                 color: $white;
-                font-size: 14px;
-                font-family: 'Open Sans', sans-serif;
-                font-style: normal; 
-            }
+                font-family: 'Open Sans',sans-serif;
+                font-size: 19px;
+                font-style: normal;
+                font-weight: bold;
+                letter-spacing: 0px;
+                text-shadow: 0px 0px 4px #000;
+            }        
         }
-        
-    
     }
     .features-section {
         height: 1220px;
+        padding: 70px 0 0;
         background-position: center top;
         background-repeat: no-repeat;
         background-image: url('./images/features-section.jpg');
@@ -155,17 +164,46 @@ h1 {
         @media (max-width: 650px) {
             background-image: url('./images/features-section.jpg'); height: 300px;
         }
+        h1 {
+            text-align: center
+        }
+        .features {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .row-1 {
+            margin-bottom: 50px;
+        }
+        .row-2 {
+            margin-top: 50px;
+        }
     
     }
     .testimonial-section {
         height: 671px;
+        padding: 70px 0 0;
         background-position: center top;
+        //background-attachment: fixed;
         background-repeat: no-repeat;
         background-image: url('./images/testimonial-section.jpg');
              /* Mobile Photo */
         @media (max-width: 650px) {
             background-image: url('./images/testimonial-section.jpg'); height: 300px;
         }
+        .thick-divider {
+                border-top: 5px solid #6f6666;
+        }
+        .flexslider {
+            .slides {
+                li {
+                    font-family: 'aliquamultralight';
+                    font-size: 37px;
+                    letter-spacing: 2px;
+                    padding-left: 160px;
+                }
+            }
+        } 
     
     }
     .price-section { 
@@ -180,13 +218,51 @@ h1 {
         }
     
     }
+    .faq-section { 
+        height: 600px;
+        padding: 70px 0 0;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url('./images/');
+             /* Mobile Photo */
+        @media (max-width: 650px) {
+            background-image: url('./images/'); height: 300px;
+        }
+        .thick-divider {
+                border-top: 5px solid #6f6666;
+        }
+        h3 {
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: left;
+            padding: 0px;
+            margin-bottom: 10px;
+        }
+        p {
+            text-align: left;
+        }
+    
+    }
     .btn-cta {
-        background: #f6436b;
+        background: none repeat scroll 0 0 #F6436B;
         color: $white;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 0px;
+        padding: 10px 40px;
         text-transform: uppercase;
-        font-family: 'aliquamultralight';
-        letter-spacing: 3px;
-        padding: 10px 20px;
+    }
+    .hideme {
+        opacity:0;
+    }
+    .keepscrolling {
+        margin-top: 100px;
+        background: $black;
     }
 }
 #wrap {

@@ -99,10 +99,48 @@ if (typeof console === "undefined") {
 
 // VIDEO PLACEHOLDER IMAGE
      
-$('img').click(function(){
+$('#vid').click(function(){
     var video = '<iframe src="'+ $(this).attr('data-video') +'" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
     $(this).replaceWith(video);
 });
 
 
+
+//  PARALLAX SCROLLING   
+//    $('.parallax-manage-biz-section').parallax({
+//	    speed : 0.40
+//   });
+//    $('.testimonial-section').parallax({
+//	    speed : 0.70
+//    });
+
+
+// SCROLLSPY
+$('body').scrollspy({ target: '.navbar-collapse' })
+
+// FADE IN WHEN SCROLLING
+
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
 
