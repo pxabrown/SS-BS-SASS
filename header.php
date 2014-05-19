@@ -154,11 +154,11 @@
 <div class="faq-section" id="faq">
   <section class="col-xs-12">
   <div class="features centered">
-    <h1>Frequetntly Asked Questions</h1>
+    <h1>Frequently Asked Questions</h1>
     <div class="container">
       <div class="col-xs-12 col-md-6">
         <h3>How do I sign up?</h3>
-        <p>Simply click the '<a class="scroll-link" data-id="pricing" href="#pricing" role="button"> Create My Account</a>' button to get started. Sign-up only takes a minute or so!</p>
+        <p>Simply click the '<a class="scroll-link" data-id="pricing" href="#pricing" role="button"> Create My Account</a>' button to get started. Sign-up only takes a minute!</p>
         
         <h3>How do I cancel service?</h3>
         <p>You can cancel any time prior to renewal by contacting support. Sorry, no refunds on renewals!</p>
@@ -169,14 +169,14 @@
       
       <!-- COLUMN 2 -->
       <div class="col-xs-12 col-md-6">
-        <h3>How do I sign up?</h3>
-        <p>Simply click the 'Create My Account' button to get started. Sign-up only takes a minute or so!</p>
+        <h3>Can I switch plans?</h3>
+        <p>Of course! You can upgrade or downgrade your plan at any time. </p>
         
-        <h3>How do I sign up?</h3>
-        <p>Simply click the 'Create My Account' button to get started. Sign-up only takes a minute or so!</p>
+        <h3>Can I import my contacts?</h3>
+        <p>Yes, you can import contacts from most address books as well as directly from GMail.</p>
         
-        <h3>How do I sign up?</h3>
-        <p>Simply click the 'Create My Account' button to get started. Sign-up only takes a minute or so!</p>
+        <h3>Have More Questions?</h3>
+        <p>Our support team is available from 6am PST to 7pm PST and usually responds in well under an hour. Visit our <a href="#">Help & Support Center</a> to contact them.</p>
       </div>
     </div>
     </section>

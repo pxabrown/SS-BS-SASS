@@ -1,4 +1,4 @@
-	<a href="#" class="navbar-brand scroll-top hideme">Scroll Up</a>
+	<!-- <a href="#" class="navbar-brand scroll-top hideme">Scroll Up</a>-->
 
 	</div> <!-- /.container -->
   </div> <!-- /#wrap -->
@@ -6,7 +6,7 @@
   <footer id="footer" class="<?php echo $footer_class; ?>">
     <div class="container">
 		<?php dynamic_sidebar( 'Footer' ); ?>
-		<p>&copy; <?php echo date( "Y" ); echo " "; bloginfo( 'name' ); ?></p>
+		<p>&copy; <?php echo date( "Y" ); echo " "; bloginfo( 'name' ); ?>. All Rights Reserved.</p>
     </div>
 	</footer>
 

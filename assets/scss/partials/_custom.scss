@@ -6,13 +6,17 @@ $big-logo-padding: 15px;
 $small-logo-padding: 2px; 
 $white: #fff;
 $black: #000;
+$title: aliquamultralight;
 
 // GENERAL THEME STUFF
 body {
     background: $white;
 }
+a {
+    color: #f6436b;
+}
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'aliquamultralight';
+    font-family: $title;
 }
 h1 {
     font-size: 69px;
@@ -21,7 +25,7 @@ h1 {
     margin-bottom: 40px;
     @media (max-width: 650px) {
         font-size: 27px;
-        font-family: 'aliquamultralight';
+        font-family: $title;
         margin-bottom: 20px;
     }
     .para-text {
@@ -80,7 +84,7 @@ h1 {
             }
             .our-family-of-users p {
                 color: #4F4F4F;
-                font-family: 'aliquamultralight';
+                font-family: $title;
                 font-size: 30px;
                 font-style: italic;
                 letter-spacing: 2px;
@@ -197,7 +201,7 @@ h1 {
         .flexslider {
             .slides {
                 li {
-                    font-family: 'aliquamultralight';
+                    font-family: $title;
                     font-size: 37px;
                     letter-spacing: 2px;
                     padding-left: 160px;
@@ -221,28 +225,30 @@ h1 {
     .faq-section { 
         height: 600px;
         padding: 70px 0 0;
-        background-position: center top;
+        background-position: center bottom;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-image: url('./images/');
+        background-image: url('./images/faq-footer.jpg');
              /* Mobile Photo */
         @media (max-width: 650px) {
-            background-image: url('./images/'); height: 300px;
+            background-image: url('./images/faq-footer.jpg'); height: 300px;
         }
         .thick-divider {
                 border-top: 5px solid #6f6666;
         }
         h3 {
-            font-size: 18px;
+            font-size: 15px;
             font-family: 'Open Sans', sans-serif;
             text-transform: uppercase;
             font-weight: bold;
             text-align: left;
             padding: 0px;
-            margin-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
         }
         p {
             text-align: left;
+            font-size: 14px;
         }
     
     }

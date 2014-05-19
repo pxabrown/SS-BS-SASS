@@ -5024,8 +5024,11 @@ td.visible-print {
 body {
   background: white; }
 
+a {
+  color: #f6436b; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'aliquamultralight'; }
+  font-family: aliquamultralight; }
 
 h1 {
   font-size: 69px;
@@ -5035,7 +5038,7 @@ h1 {
   @media (max-width: 650px) {
     h1 {
       font-size: 27px;
-      font-family: 'aliquamultralight';
+      font-family: aliquamultralight;
       margin-bottom: 20px; } }
   h1 .para-text {
     left: 0;
@@ -5086,7 +5089,7 @@ h1 {
         border-top: 5px solid #6f6666; }
       .big-wrapper .parallax-manage-biz-section .easily-manage .our-family-of-users p {
         color: #4F4F4F;
-        font-family: 'aliquamultralight';
+        font-family: aliquamultralight;
         font-size: 30px;
         font-style: italic;
         letter-spacing: 2px;
@@ -5181,7 +5184,7 @@ h1 {
     .big-wrapper .testimonial-section .thick-divider {
       border-top: 5px solid #6f6666; }
     .big-wrapper .testimonial-section .flexslider .slides li {
-      font-family: 'aliquamultralight';
+      font-family: aliquamultralight;
       font-size: 37px;
       letter-spacing: 2px;
       padding-left: 160px; }
@@ -5199,27 +5202,29 @@ h1 {
   .big-wrapper .faq-section {
     height: 600px;
     padding: 70px 0 0;
-    background-position: center top;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url("./images/");
+    background-image: url("./images/faq-footer.jpg");
     /* Mobile Photo */ }
     @media (max-width: 650px) {
       .big-wrapper .faq-section {
-        background-image: url("./images/");
+        background-image: url("./images/faq-footer.jpg");
         height: 300px; } }
     .big-wrapper .faq-section .thick-divider {
       border-top: 5px solid #6f6666; }
     .big-wrapper .faq-section h3 {
-      font-size: 18px;
+      font-size: 15px;
       font-family: 'Open Sans', sans-serif;
       text-transform: uppercase;
       font-weight: bold;
       text-align: left;
       padding: 0px;
-      margin-bottom: 10px; }
+      margin-top: 40px;
+      margin-bottom: 20px; }
     .big-wrapper .faq-section p {
-      text-align: left; }
+      text-align: left;
+      font-size: 14px; }
   .big-wrapper .btn-cta {
     background: none repeat scroll 0 0 #F6436B;
     color: white;

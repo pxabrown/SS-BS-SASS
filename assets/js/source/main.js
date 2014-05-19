@@ -110,7 +110,7 @@ $('#vid').click(function(){
 //    $('.parallax-manage-biz-section').parallax({
 //	    speed : 0.40
 //   });
-//    $('.testimonial-section').parallax({
+//    $('.faq-section').parallax({
 //	    speed : 0.70
 //    });
 
