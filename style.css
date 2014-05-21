@@ -5083,43 +5083,43 @@ h6 {
     background-position: center top;
     background-repeat: no-repeat;
     padding-top: 80px; }
-  .big-wrapper .parallax-manage-biz-section {
+  .big-wrapper .manage-biz-section {
     height: 863px;
     text-align: center;
     background-position: center top;
     background-repeat: no-repeat;
-    background-image: url("./images/hero-header-josh.jpg");
+    background-image: url("./images/josh-hero.jpg");
     /* Mobile Parallax Photo */ }
     @media (max-width: 650px) {
-      .big-wrapper .parallax-manage-biz-section {
+      .big-wrapper .manage-biz-section {
         background-image: url("./images/small-screen/768-md-screen-manage-section.jpg");
         height: 715px; } }
     @media (min-width: 768px) and (max-width: 991px) {
-      .big-wrapper .parallax-manage-biz-section {
+      .big-wrapper .manage-biz-section {
         background-image: url("./images/small-screen/768-md-screen-manage-section.jpg");
         height: 1075px; } }
     @media (min-width: 992px) and (max-width: 1199px) {
-      .big-wrapper .parallax-manage-biz-section {
+      .big-wrapper .manage-biz-section {
         background-image: url("./images/small-screen/md-screen-manage-section.jpg");
         height: 767px; } }
-    .big-wrapper .parallax-manage-biz-section .easily-manage {
+    .big-wrapper .manage-biz-section .easily-manage {
       margin-left: auto;
       margin-right: auto;
       margin-top: 100px;
       text-align: center;
       width: 50%; }
       @media (max-width: 650px) {
-        .big-wrapper .parallax-manage-biz-section .easily-manage {
+        .big-wrapper .manage-biz-section .easily-manage {
           width: 90%;
           margin-top: 40px; } }
       @media (min-width: 768px) and (max-width: 991px) {
-        .big-wrapper .parallax-manage-biz-section .easily-manage {
+        .big-wrapper .manage-biz-section .easily-manage {
           width: 62%; }
-          .big-wrapper .parallax-manage-biz-section .easily-manage .josh {
+          .big-wrapper .manage-biz-section .easily-manage .josh {
             margin-top: 30px; } }
-      .big-wrapper .parallax-manage-biz-section .easily-manage .thick-divider {
+      .big-wrapper .manage-biz-section .easily-manage .thick-divider {
         border-top: 5px solid #6f6666; }
-      .big-wrapper .parallax-manage-biz-section .easily-manage .our-family-of-users p {
+      .big-wrapper .manage-biz-section .easily-manage .our-family-of-users p {
         color: #4F4F4F;
         font-family: aliquamultralight;
         font-size: 30px;
@@ -5128,19 +5128,19 @@ h6 {
         margin: 60px auto;
         width: 60%; }
         @media (max-width: 650px) {
-          .big-wrapper .parallax-manage-biz-section .easily-manage .our-family-of-users p {
+          .big-wrapper .manage-biz-section .easily-manage .our-family-of-users p {
             width: 95%;
             font-size: 18px;
             font-style: normal;
             margin: 30px auto; } }
         @media (min-width: 992px) and (max-width: 1199px) {
-          .big-wrapper .parallax-manage-biz-section .easily-manage .our-family-of-users p {
+          .big-wrapper .manage-biz-section .easily-manage .our-family-of-users p {
             width: 100%;
             font-size: 29px;
             margin: 30px auto;
             font-weight: 600; } }
         @media (min-width: 768px) and (max-width: 991px) {
-          .big-wrapper .parallax-manage-biz-section .easily-manage .our-family-of-users p {
+          .big-wrapper .manage-biz-section .easily-manage .our-family-of-users p {
             width: 100%;
             font-size: 25px;
             color: #000;
@@ -5234,15 +5234,15 @@ h6 {
       font-size: 16px;
       font-style: italic; }
     .big-wrapper .features-section .features {
-      width: 75%;
+      width: 60%;
       margin-left: auto;
       margin-right: auto; }
       @media (max-width: 650px) {
         .big-wrapper .features-section .features {
           width: 100%; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
+      @media (min-width: 768px) and (max-width: 991px) {
         .big-wrapper .features-section .features {
-          width: 60%; } }
+          width: 90%; } }
     .big-wrapper .features-section .row-1 {
       margin-bottom: 50px; }
     .big-wrapper .features-section .row-2 {

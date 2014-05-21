@@ -81,13 +81,13 @@ h6 {
         //background-attachment: fixed;
         padding-top: 80px;
     }
-    .parallax-manage-biz-section {
+    .manage-biz-section {
         height: 863px;
         text-align: center;
         background-position: center top;
         background-repeat: no-repeat;
         //background-attachment: fixed;
-        background-image: url('./images/hero-header-josh.jpg');
+        background-image: url('./images/josh-hero.jpg');
              /* Mobile Parallax Photo */
              @media (max-width: 650px) { 
                 background-image: url('./images/small-screen/768-md-screen-manage-section.jpg'); 
@@ -260,14 +260,14 @@ h6 {
             font-style: italic;
         }
         .features {
-            width: 75%;
+            width: 60%;
             margin-left: auto;
             margin-right: auto;
             @media (max-width: 650px) { 
                 width: 100%;
             }
-            @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-            width: 60%;
+            @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            width: 90%;
             }
         }
         .row-1 {

@@ -62,7 +62,7 @@
   <!--/.container-fluid --> 
 </div>
 <div class="big-wrapper">
-<div class="parallax-manage-biz-section" id="easily-manage">
+<div class="manage-biz-section" id="easily-manage">
   <section class="col-xs-12">
     <div class="easily-manage">
       <h1 class="para-text">Easily Manage Your Photography Business</h1>
