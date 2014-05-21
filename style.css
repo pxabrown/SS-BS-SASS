@@ -5022,7 +5022,8 @@ td.visible-print {
            Variables
   ********************************** */
 body {
-  background: white; }
+  background: #f0eeee;
+  font-family: "Ubuntu", sans-serif; }
 
 a {
   color: #f6436b; }
@@ -5035,7 +5036,17 @@ h1 {
   letter-spacing: 4px;
   font-weight: normal;
   margin-bottom: 40px; }
-  @media (max-width: 650px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    h1 {
+      font-size: 56px;
+      font-family: aliquamultralight;
+      margin-bottom: 20px; } }
+  @media (max-width: 991px) {
+    h1 {
+      font-size: 37px;
+      font-family: aliquamultralight;
+      margin-bottom: 20px; } }
+  @media (max-width: 767px) {
     h1 {
       font-size: 27px;
       font-family: aliquamultralight;
@@ -5045,6 +5056,9 @@ h1 {
     top: 45px;
     width: 100%;
     z-index: 1; }
+
+h6 {
+  border-top: 1px solid #DEDCDC; }
 
 .centered {
   float: none;
@@ -5064,6 +5078,11 @@ h1 {
 
 .big-wrapper {
   margin: 0; }
+  .big-wrapper .sections, .big-wrapper .video-section, .big-wrapper .features-section, .big-wrapper .testimonial-section, .big-wrapper .price-section, .big-wrapper .faq-section {
+    text-align: center;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 80px; }
   .big-wrapper .parallax-manage-biz-section {
     height: 863px;
     text-align: center;
@@ -5073,8 +5092,16 @@ h1 {
     /* Mobile Parallax Photo */ }
     @media (max-width: 650px) {
       .big-wrapper .parallax-manage-biz-section {
-        background-image: url("./images/small-screen/smallest-screen-manage-section.jpg");
-        height: 745px; } }
+        background-image: url("./images/small-screen/768-md-screen-manage-section.jpg");
+        height: 715px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .big-wrapper .parallax-manage-biz-section {
+        background-image: url("./images/small-screen/768-md-screen-manage-section.jpg");
+        height: 1075px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .big-wrapper .parallax-manage-biz-section {
+        background-image: url("./images/small-screen/md-screen-manage-section.jpg");
+        height: 767px; } }
     .big-wrapper .parallax-manage-biz-section .easily-manage {
       margin-left: auto;
       margin-right: auto;
@@ -5085,6 +5112,11 @@ h1 {
         .big-wrapper .parallax-manage-biz-section .easily-manage {
           width: 90%;
           margin-top: 40px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .big-wrapper .parallax-manage-biz-section .easily-manage {
+          width: 62%; }
+          .big-wrapper .parallax-manage-biz-section .easily-manage .josh {
+            margin-top: 30px; } }
       .big-wrapper .parallax-manage-biz-section .easily-manage .thick-divider {
         border-top: 5px solid #6f6666; }
       .big-wrapper .parallax-manage-biz-section .easily-manage .our-family-of-users p {
@@ -5101,20 +5133,41 @@ h1 {
             font-size: 18px;
             font-style: normal;
             margin: 30px auto; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .big-wrapper .parallax-manage-biz-section .easily-manage .our-family-of-users p {
+            width: 100%;
+            font-size: 29px;
+            margin: 30px auto;
+            font-weight: 600; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .big-wrapper .parallax-manage-biz-section .easily-manage .our-family-of-users p {
+            width: 100%;
+            font-size: 25px;
+            color: #000;
+            font-weight: 600; } }
   .big-wrapper .video-section {
     height: 1250px;
-    padding-top: 80px;
-    text-align: center;
-    background-position: center top;
-    background-repeat: no-repeat;
     background-image: url("./images/para-video-section.jpg");
     /* Mobile Photo */ }
     @media (max-width: 650px) {
       .big-wrapper .video-section {
         background-image: url("./images/para-video-section.jpg");
-        height: 300px; } }
-    .big-wrapper .video-section .video img {
-      cursor: pointer; }
+        height: 715px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .big-wrapper .video-section {
+        background-image: url("./images/para-video-section.jpg");
+        height: 900px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .big-wrapper .video-section {
+        height: 1215px; } }
+    .big-wrapper .video-section .video {
+      background: url();
+      margin: 90px auto 50px; }
+      .big-wrapper .video-section .video img {
+        cursor: pointer; }
+      @media (max-width: 650px) {
+        .big-wrapper .video-section .video {
+          margin: 50px auto 20px; } }
     .big-wrapper .video-section h1 {
       margin: 0px;
       padding: 0px; }
@@ -5124,17 +5177,21 @@ h1 {
       font-style: normal;
       font-weight: 600;
       text-shadow: 0 0 5px #000000; }
-    .big-wrapper .video-section .video {
-      background: url();
-      margin: 90px auto 50px; }
+      @media (max-width: 650px) {
+        .big-wrapper .video-section h3 {
+          font-size: 25px; } }
     .big-wrapper .video-section .short-video-p {
       color: #6f6666;
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Ubuntu", sans-serif;
       font-size: 20px;
       font-style: italic;
       letter-spacing: 2px;
       margin: 0px auto;
       width: 60%; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .big-wrapper .video-section .short-video-p p {
+          margin-top: 15px;
+          font-size: 17px; } }
       @media (max-width: 650px) {
         .big-wrapper .video-section .short-video-p {
           width: 95%;
@@ -5143,44 +5200,61 @@ h1 {
           margin: 30px auto; } }
     .big-wrapper .video-section .get-started p {
       color: white;
-      font-family: 'Open Sans',sans-serif;
+      font-family: "Ubuntu", sans-serif;
       font-size: 19px;
       font-style: normal;
       font-weight: bold;
       letter-spacing: 0px;
       text-shadow: 0px 0px 4px #000; }
+      @media (max-width: 650px) {
+        .big-wrapper .video-section .get-started p {
+          font-size: 19px;
+          font-weight: normal;
+          line-height: 21px; } }
   .big-wrapper .features-section {
     height: 1220px;
-    padding: 70px 0 0;
-    background-position: center top;
-    background-repeat: no-repeat;
     background-image: url("./images/features-section.jpg");
     /* Mobile Photo */ }
-    @media (max-width: 650px) {
+    @media (min-width: 768px) and (max-width: 991px) {
       .big-wrapper .features-section {
         background-image: url("./images/features-section.jpg");
-        height: 300px; } }
+        height: 1015px;
+        background-attachment: fixed; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .big-wrapper .features-section {
+        background-image: url("./images/small-screen/md-screen-features-section.jpg");
+        height: 1218px; } }
     .big-wrapper .features-section h1 {
       text-align: center; }
+    .big-wrapper .features-section h3 {
+      color: #f6436b;
+      font-family: "Ubuntu", sans-serif; }
+    .big-wrapper .features-section p {
+      color: #53585b;
+      font-size: 16px;
+      font-style: italic; }
     .big-wrapper .features-section .features {
-      width: 50%;
+      width: 75%;
       margin-left: auto;
       margin-right: auto; }
+      @media (max-width: 650px) {
+        .big-wrapper .features-section .features {
+          width: 100%; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .big-wrapper .features-section .features {
+          width: 60%; } }
     .big-wrapper .features-section .row-1 {
       margin-bottom: 50px; }
     .big-wrapper .features-section .row-2 {
       margin-top: 50px; }
   .big-wrapper .testimonial-section {
     height: 671px;
-    padding: 70px 0 0;
-    background-position: center top;
-    background-repeat: no-repeat;
     background-image: url("./images/testimonial-section.jpg");
     /* Mobile Photo */ }
-    @media (max-width: 650px) {
+    @media (min-width: 768px) and (max-width: 991px) {
       .big-wrapper .testimonial-section {
         background-image: url("./images/testimonial-section.jpg");
-        height: 300px; } }
+        height: 670px; } }
     .big-wrapper .testimonial-section .thick-divider {
       border-top: 5px solid #6f6666; }
     .big-wrapper .testimonial-section .flexslider .slides li {
@@ -5190,51 +5264,346 @@ h1 {
       padding-left: 160px; }
   .big-wrapper .price-section {
     height: 2197px;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-image: url("./images/price-section.jpg");
     /* Mobile Photo */ }
     @media (max-width: 650px) {
       .big-wrapper .price-section {
         background-image: url("./images/price-section.jpg");
-        height: 300px; } }
+        height: 1590px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .big-wrapper .price-section {
+        background-image: url("./images/price-section.jpg");
+        height: 1962px; } }
+    .big-wrapper .price-section h1 {
+      text-align: center;
+      color: white; }
+      @media (max-width: 650px) {
+        .big-wrapper .price-section h1 {
+          font-size: 30px; } }
+    .big-wrapper .price-section p {
+      color: #D2D2D2;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 22px;
+      letter-spacing: 2px;
+      line-height: 32px; }
+      @media (max-width: 650px) {
+        .big-wrapper .price-section p {
+          font-size: 15px;
+          letter-spacing: 0px;
+          line-height: 20px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .big-wrapper .price-section p {
+          font-size: 15px;
+          letter-spacing: 1px;
+          line-height: 20px; } }
+    .big-wrapper .price-section .count-down-price {
+      background: black;
+      color: #FFFFFF;
+      font-family: aliquamultralight;
+      font-size: 25px;
+      letter-spacing: 3px;
+      margin-top: 25px;
+      padding: 0px;
+      text-transform: uppercase; }
+      @media (max-width: 650px) {
+        .big-wrapper .price-section .count-down-price {
+          display: none; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .big-wrapper .price-section .count-down-price {
+          font-size: 16px; } }
+      .big-wrapper .price-section .count-down-price .clock {
+        float: left;
+        margin: 10px 0 0 10px; }
+      .big-wrapper .price-section .count-down-price .saleendsin .endsin {
+        float: left;
+        margin: 19px 0 0 20px; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .big-wrapper .price-section .count-down-price .saleendsin .endsin {
+            margin: 24px 0 0 20px; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .big-wrapper .price-section .count-down-price .saleendsin .endsin {
+            float: left;
+            font-size: 16px;
+            margin: 24px 0 0 20px; } }
+      .big-wrapper .price-section .count-down-price span {
+        font-size: 48px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: bold;
+        color: #f6436b;
+        letter-spacing: 0px; }
+      .big-wrapper .price-section .count-down-price span.timeframe {
+        font-size: 18px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: normal;
+        color: white;
+        text-transform: lowercase; }
+    .big-wrapper .price-section .price-table {
+      margin-top: 50px; }
+      @media (max-width: 650px) {
+        .big-wrapper .price-section .price-table {
+          margin-top: 0px; } }
+      .big-wrapper .price-section .price-table .block-topper-spacer {
+        padding: 15px 0px; }
+      .big-wrapper .price-section .price-table .block-topper {
+        background: #f6436b;
+        padding: 5px 0px;
+        color: white;
+        letter-spacing: 2px; }
+        @media (max-width: 650px) {
+          .big-wrapper .price-section .price-table .block-topper {
+            margin-top: 30px; } }
+      .big-wrapper .price-section .price-table .top-block {
+        background: black;
+        color: white;
+        padding: 20px 0px 40px; }
+        .big-wrapper .price-section .price-table .top-block h3 {
+          font-family: "Ubuntu", sans-serif;
+          font-size: 20px;
+          text-transform: uppercase;
+          text-align: center;
+          letter-spacing: 2px; }
+          @media (max-width: 650px) {
+            .big-wrapper .price-section .price-table .top-block h3 {
+              font-size: 17px;
+              letter-spacing: 1px; } }
+        .big-wrapper .price-section .price-table .top-block .short-sale {
+          font-style: italic;
+          font-size: 16px;
+          font-family: Georgia, serif;
+          color: #48c98f; }
+          .big-wrapper .price-section .price-table .top-block .short-sale .small {
+            margin-top: 60px; }
+            @media (max-width: 650px) {
+              .big-wrapper .price-section .price-table .top-block .short-sale .small {
+                margin-top: 0px; } }
+          .big-wrapper .price-section .price-table .top-block .short-sale .big {
+            margin-top: 30px; }
+            @media (max-width: 650px) {
+              .big-wrapper .price-section .price-table .top-block .short-sale .big {
+                margin-top: 0px; } }
+        @media (max-width: 650px) {
+          .big-wrapper .price-section .price-table .top-block a.main-cta {
+            display: block;
+            padding: 20px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: white;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #f6436b;
+            width: 80%;
+            text-align: center;
+            font-weight: 600;
+            font-family: "Ubuntu", sans-serif;
+            text-transform: uppercase; } }
+        @media (max-width: 650px) {
+          .big-wrapper .price-section .price-table .top-block a.second-cta {
+            display: block;
+            padding: 20px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: white;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #3c9ef4;
+            width: 80%;
+            text-align: center;
+            font-weight: 600;
+            font-family: "Ubuntu", sans-serif;
+            text-transform: uppercase; } }
+        .big-wrapper .price-section .price-table .top-block .popular {
+          font-style: italic;
+          font-size: 18px;
+          font-family: Georgia, serif;
+          color: #f6436b;
+          margin-top: 40px; }
+          @media (max-width: 650px) {
+            .big-wrapper .price-section .price-table .top-block .popular {
+              margin-top: 0px; } }
+        .big-wrapper .price-section .price-table .top-block .big-price {
+          font-size: 75px;
+          text-transform: uppercase;
+          margin: -13px 0px -22px; }
+          .big-wrapper .price-section .price-table .top-block .big-price span.money {
+            font-size: 20px;
+            vertical-align: super;
+            margin-top: 5px; }
+          .big-wrapper .price-section .price-table .top-block .big-price span {
+            font-size: 15px; }
+        .big-wrapper .price-section .price-table .top-block .normal-price {
+          font-size: 24px;
+          color: #c7c7c7;
+          text-transform: uppercase;
+          margin-top: -13px; }
+          .big-wrapper .price-section .price-table .top-block .normal-price span {
+            font-size: 15px; }
+      .big-wrapper .price-section .price-table .package {
+        background: white;
+        color: #3d3d3d;
+        padding: 20px;
+        text-align: left; }
+        .big-wrapper .price-section .price-table .package ul {
+          list-style: none;
+          margin: 0px;
+          padding: 0px; }
+          .big-wrapper .price-section .price-table .package ul li {
+            border-bottom: 1px solid #eae8e8;
+            padding: 15px 15px 15px 30px; }
+            @media (min-width: 768px) and (max-width: 991px) {
+              .big-wrapper .price-section .price-table .package ul li {
+                padding: 10px 0px 10px 5px; } }
+        .big-wrapper .price-section .price-table .package a.cta {
+          display: block;
+          padding: 20px;
+          font-size: 14px;
+          letter-spacing: 1px;
+          color: white;
+          margin-top: 30px;
+          margin-left: auto;
+          margin-right: auto;
+          background: #3c9ef4;
+          width: 80%;
+          text-align: center;
+          font-weight: 600;
+          font-family: "Ubuntu", sans-serif;
+          text-transform: uppercase; }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .big-wrapper .price-section .price-table .package a.cta {
+              font-size: 10px; } }
+        .big-wrapper .price-section .price-table .package a.main-cta {
+          display: block;
+          padding: 20px;
+          font-size: 14px;
+          letter-spacing: 1px;
+          color: white;
+          margin-top: 30px;
+          margin-left: auto;
+          margin-right: auto;
+          background: #f6436b;
+          width: 80%;
+          text-align: center;
+          font-weight: 600;
+          font-family: "Ubuntu", sans-serif;
+          text-transform: uppercase; }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .big-wrapper .price-section .price-table .package a.main-cta {
+              font-size: 10px; } }
+      .big-wrapper .price-section .price-table .moneyback {
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 20px; }
   .big-wrapper .faq-section {
-    height: 600px;
-    padding: 70px 0 0;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    height: 900px;
     background-image: url("./images/faq-footer.jpg");
     /* Mobile Photo */ }
     @media (max-width: 650px) {
       .big-wrapper .faq-section {
+        background-attachment: fixed;
         background-image: url("./images/faq-footer.jpg");
-        height: 300px; } }
+        height: 1560px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .big-wrapper .faq-section {
+        background-image: url("./images/faq-footer.jpg");
+        height: 1175px; } }
     .big-wrapper .faq-section .thick-divider {
       border-top: 5px solid #6f6666; }
     .big-wrapper .faq-section h3 {
       font-size: 15px;
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Ubuntu", sans-serif;
       text-transform: uppercase;
-      font-weight: bold;
       text-align: left;
       padding: 0px;
       margin-top: 40px;
       margin-bottom: 20px; }
+      @media (max-width: 650px) {
+        .big-wrapper .faq-section h3 {
+          text-align: center; } }
     .big-wrapper .faq-section p {
       text-align: left;
       font-size: 14px; }
+      @media (max-width: 650px) {
+        .big-wrapper .faq-section p {
+          text-align: center; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .big-wrapper .faq-section p {
+          text-align: left; } }
+  .big-wrapper .footer-section {
+    margin: 80px 0 0;
+    text-align: left;
+    color: #606060; }
+    .big-wrapper .footer-section a {
+      color: #606060; }
+    .big-wrapper .footer-section .footer-wrapper {
+      padding: 20px 20px 40px; }
+      .big-wrapper .footer-section .footer-wrapper .footer-menu {
+        margin-bottom: 30px; }
+        .big-wrapper .footer-section .footer-wrapper .footer-menu .footer-nav ul {
+          list-style: none;
+          margin: 0px;
+          padding: 0px; }
+          .big-wrapper .footer-section .footer-wrapper .footer-menu .footer-nav ul li {
+            text-align: center;
+            display: inline-block; }
+            @media (max-width: 650px) {
+              .big-wrapper .footer-section .footer-wrapper .footer-menu .footer-nav ul li {
+                display: block; } }
+          .big-wrapper .footer-section .footer-wrapper .footer-menu .footer-nav ul li:before {
+            content: " | ";
+            margin-left: 10px;
+            margin-right: 10px; }
+            @media (max-width: 650px) {
+              .big-wrapper .footer-section .footer-wrapper .footer-menu .footer-nav ul li:before {
+                content: "";
+                margin-left: 0px;
+                margin-right: 0px; } }
+          .big-wrapper .footer-section .footer-wrapper .footer-menu .footer-nav ul li:first-child:before {
+            content: none; }
+      .big-wrapper .footer-section .footer-wrapper .btn-cta {
+        background: none repeat scroll 0 0 #F6436B;
+        color: white;
+        font-family: "Ubuntu", sans-serif;
+        font-style: normal;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        width: 200px; }
+        @media (max-width: 650px) {
+          .big-wrapper .footer-section .footer-wrapper .btn-cta {
+            font-size: 11px; } }
+      .big-wrapper .footer-section .footer-wrapper .last-chance {
+        text-align: right;
+        margin-top: 0px; }
+        .big-wrapper .footer-section .footer-wrapper .last-chance p {
+          text-align: right; }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .big-wrapper .footer-section .footer-wrapper .last-chance p {
+              text-align: center; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .big-wrapper .footer-section .footer-wrapper .last-chance {
+            text-align: center;
+            margin: 30px 0 0; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .big-wrapper .footer-section .footer-wrapper .last-chance {
+            margin-top: 0px; } }
+        @media (max-width: 650px) {
+          .big-wrapper .footer-section .footer-wrapper .last-chance {
+            display: none; } }
   .big-wrapper .btn-cta {
     background: none repeat scroll 0 0 #F6436B;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-style: normal;
     font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 0px;
+    letter-spacing: 1px;
     padding: 10px 40px;
     text-transform: uppercase; }
+    @media (max-width: 650px) {
+      .big-wrapper .btn-cta {
+        font-size: 15px; } }
   .big-wrapper .hideme {
     opacity: 0; }
   .big-wrapper .keepscrolling {
@@ -5242,16 +5611,38 @@ h1 {
     background: black; }
 
 #wrap .navi {
-  height: 106px; }
+  height: 106px;
+  padding-top: 11px;
+  background: white; }
   @media (max-width: 650px) {
     #wrap .navi {
       height: auto; } }
+@media (min-width: 480px) and (max-width: 991px) {
+  #wrap .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 54%; }
+  #wrap .nav > li > a {
+    display: block;
+    margin: 0 15px 0 0;
+    position: relative;
+    font-size: 15px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #wrap .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; }
+  #wrap .nav > li > a {
+    display: block;
+    margin: 0 15px 0 0;
+    position: relative;
+    font-size: 18px; } }
 
-/* *********************************
-   Some Style Overrides on Bootstrap
-  ********************************** */
 .small-nav {
   background: rgba(255, 255, 255, 0.5); }
+
+.navbar-nav {
+  margin-top: 20px; }
 
 .navbar-inverse {
   background: rgba(62, 195, 246, 0);
@@ -5277,14 +5668,24 @@ h1 {
       background: rgba(255, 255, 255, 0.75); } }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: black; }
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: lighter; }
+  @media (max-width: 650px) {
+    .navbar-inverse .navbar-nav > li > a {
+      border-bottom: 1px solid #DDDDDD;
+      color: #000000;
+      font-family: "Ubuntu",sans-serif;
+      font-size: 16px;
+      font-weight: lighter;
+      text-align: center;
+      text-transform: uppercase; } }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color: #22F; }
 
-/* *********************************
-           Toolbar Logo
-  ********************************** */
 .small-logo-container {
   padding-top: 50px;
   height: 50px;
@@ -5295,13 +5696,14 @@ h1 {
   font-size: 2.5em;
   padding-bottom: 2px; }
 
-/* *********************************
-           Big Logo
-  ********************************** */
 .big-logo-row {
   background: white; }
   .big-logo-row .big-logo-container {
     padding-top: 0px; }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: #8F8F8F;
+  background: none; }
 
 @font-face {
   font-family: 'aliquamultralight';
@@ -5386,12 +5788,12 @@ body {
   /* Negative indent footer by its height */
   margin: 0 auto -100px;
   /* Pad bottom by footer height */
-  padding: 0 0 100px; }
+  padding: 0; }
 
 #main {
   margin-bottom: 15px; }
 
-/* Set the fixed height of the footer here */
+/* fixed height of the footer  */
 #footer {
   height: 100px;
   background-color: #f5f5f5;

@@ -7,10 +7,14 @@ $small-logo-padding: 2px;
 $white: #fff;
 $black: #000;
 $title: aliquamultralight;
+$ubuntu: 'Ubuntu', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+$divider: 5px solid #6f6666;
 
 // GENERAL THEME STUFF
 body {
-    background: $white;
+    background: #f0eeee;
+    font-family: $ubuntu;
 }
 a {
     color: #f6436b;
@@ -23,7 +27,17 @@ h1 {
     letter-spacing: 4px;
     font-weight: normal;
     margin-bottom: 40px;
-    @media (max-width: 650px) {
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { 
+        font-size: 56px;
+        font-family: $title;
+        margin-bottom: 20px;
+    }
+    @media (max-width: $screen-sm-max) {
+        font-size: 37px;
+        font-family: $title;
+        margin-bottom: 20px;
+    }
+    @media (max-width: $screen-xs-max) {
         font-size: 27px;
         font-family: $title;
         margin-bottom: 20px;
@@ -34,6 +48,9 @@ h1 {
         width: 100%;
         z-index: 1;
     }
+}
+h6 {
+    border-top: 1px solid #DEDCDC;
 }
 .centered {
     float: none;
@@ -57,6 +74,13 @@ h1 {
 
 .big-wrapper {
     margin: 0;
+    .sections {
+        text-align: center;
+        background-position: center top;
+        background-repeat: no-repeat;
+        //background-attachment: fixed;
+        padding-top: 80px;
+    }
     .parallax-manage-biz-section {
         height: 863px;
         text-align: center;
@@ -65,10 +89,19 @@ h1 {
         //background-attachment: fixed;
         background-image: url('./images/hero-header-josh.jpg');
              /* Mobile Parallax Photo */
-        @media (max-width: 650px) {
-            background-image: url('./images/small-screen/smallest-screen-manage-section.jpg'); 
-            height: 745px;
-        }
+             @media (max-width: 650px) { 
+                background-image: url('./images/small-screen/768-md-screen-manage-section.jpg'); 
+                height: 715px;
+             }
+            @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                background-image: url('./images/small-screen/768-md-screen-manage-section.jpg'); 
+                height: 1075px;
+            }
+            @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { 
+                background-image: url('./images/small-screen/md-screen-manage-section.jpg');
+                height: 767px;
+            }
+            
         .easily-manage {
             margin-left: auto;
             margin-right: auto;
@@ -79,8 +112,14 @@ h1 {
                 width: 90%;
                 margin-top: 40px;
             }
+            @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+                width: 62%;
+                .josh {
+                    margin-top: 30px;
+                }
+            }
             .thick-divider {
-                border-top: 5px solid #6f6666;
+                border-top: $divider;
             }
             .our-family-of-users p {
                 color: #4F4F4F;
@@ -96,24 +135,47 @@ h1 {
                     font-style: normal;
                     margin: 30px auto;
                 }
+                @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { 
+                    width: 100%;
+                    font-size: 29px;
+                    margin: 30px auto;
+                    font-weight: 600;
+                }
+                @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+                    width: 100%;
+                    font-size: 25px;
+                    color: #000;
+                    font-weight: 600;
+                }
             }
         }
     }
     .video-section {
         height: 1250px;
-        padding-top: 80px;
-        text-align: center;
-        background-position: center top;
-        background-repeat: no-repeat;
-        //background-attachment: fixed;
+        @extend .sections;
         background-image: url('./images/para-video-section.jpg');
              /* Mobile Photo */
         @media (max-width: 650px) {
-            background-image: url('./images/para-video-section.jpg'); height: 300px;
+            background-image: url('./images/para-video-section.jpg'); 
+            height: 715px;
+        }     
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            background-image: url('./images/para-video-section.jpg'); 
+            height: 900px;
         }
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            height: 1215px;
+        }
+        
+        
         .video {
+            background: url();
+            margin:90px auto 50px;
             img {
                 cursor: pointer;
+            }
+            @media (max-width: 650px) {
+                margin:50px auto 20px;
             }
         }
         h1 {
@@ -126,19 +188,24 @@ h1 {
             font-style: normal;
             font-weight: 600;
             text-shadow: 0 0 5px #000000;
-        }
-        .video {
-            background: url();
-            margin:90px auto 50px;
+            @media (max-width: 650px) {
+                font-size: 25px;
+            }
         }
         .short-video-p {
             color: #6f6666;
-            font-family: 'Open Sans', sans-serif;
+            font-family: $ubuntu;
             font-size: 20px;
             font-style: italic;
             letter-spacing: 2px;
             margin: 0px auto;
             width: 60%;
+            @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+                p {
+                    margin-top: 15px;
+                    font-size: 17px;
+                }
+            }
             @media (max-width: 650px) {
                 width: 95%;
                 font-size: 18px;
@@ -149,32 +216,59 @@ h1 {
         .get-started {
             p {
                 color: $white;
-                font-family: 'Open Sans',sans-serif;
+                font-family: $ubuntu;
                 font-size: 19px;
                 font-style: normal;
                 font-weight: bold;
                 letter-spacing: 0px;
                 text-shadow: 0px 0px 4px #000;
+                @media (max-width: 650px) { 
+                    font-size: 19px;
+                    font-weight: normal;
+                    line-height: 21px;
+                }
             }        
         }
     }
     .features-section {
         height: 1220px;
-        padding: 70px 0 0;
-        background-position: center top;
-        background-repeat: no-repeat;
+        @extend .sections;
         background-image: url('./images/features-section.jpg');
              /* Mobile Photo */
-        @media (max-width: 650px) {
-            background-image: url('./images/features-section.jpg'); height: 300px;
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            background-image: url('./images/features-section.jpg'); 
+            height: 1015px;
+            background-attachment: fixed;
         }
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            background-image: url('./images/small-screen/md-screen-features-section.jpg'); 
+            //height: 2310px;
+            height: 1218px;
+        }
+        
+        
         h1 {
             text-align: center
         }
+        h3 {
+            color: #f6436b;
+            font-family: $ubuntu;
+        }
+        p {
+            color: #53585b;
+            font-size: 16px;
+            font-style: italic;
+        }
         .features {
-            width: 50%;
+            width: 75%;
             margin-left: auto;
             margin-right: auto;
+            @media (max-width: 650px) { 
+                width: 100%;
+            }
+            @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            width: 60%;
+            }
         }
         .row-1 {
             margin-bottom: 50px;
@@ -186,17 +280,15 @@ h1 {
     }
     .testimonial-section {
         height: 671px;
-        padding: 70px 0 0;
-        background-position: center top;
-        //background-attachment: fixed;
-        background-repeat: no-repeat;
+        @extend .sections;
         background-image: url('./images/testimonial-section.jpg');
              /* Mobile Photo */
-        @media (max-width: 650px) {
-            background-image: url('./images/testimonial-section.jpg'); height: 300px;
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            background-image: url('./images/testimonial-section.jpg'); 
+            height: 670px;
         }
         .thick-divider {
-                border-top: 5px solid #6f6666;
+                border-top: $divider;
         }
         .flexslider {
             .slides {
@@ -212,56 +304,401 @@ h1 {
     }
     .price-section { 
         height: 2197px;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        @extend .sections;    
         background-image: url('./images/price-section.jpg');
              /* Mobile Photo */
         @media (max-width: 650px) {
-            background-image: url('./images/price-section.jpg'); height: 300px;
+            background-image: url('./images/price-section.jpg'); 
+            height: 1590px;
+        }     
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            background-image: url('./images/price-section.jpg');
+            height: 1962px;
         }
-    
+        h1 {
+            text-align: center;
+            color: $white;
+            @media (max-width: 650px) { 
+                font-size: 30px;
+            }
+        }
+        p {
+            color: #D2D2D2;
+            font-family: $ubuntu;
+            font-size: 22px;
+            letter-spacing: 2px;
+            line-height: 32px;
+            @media (max-width: 650px) { 
+                font-size: 15px;
+                letter-spacing: 0px;
+                line-height: 20px;
+            }
+            @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+                font-size: 15px;
+                letter-spacing: 1px;
+                line-height: 20px;
+            }
+        }
+        .count-down-price {
+            background: $black;
+            color: #FFFFFF;
+            font-family: $title;
+            font-size: 25px;
+            letter-spacing: 3px;
+            margin-top: 25px;
+            padding: 0px;
+            text-transform: uppercase;
+            @media (max-width: 650px) { 
+                display: none;
+            }
+            @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { 
+                font-size: 16px;
+            }
+            .clock {
+                float: left;
+                margin: 10px 0 0 10px;
+            }
+            .saleendsin {
+                .endsin {
+                    float: left;
+                    margin: 19px 0 0 20px;
+                    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { 
+                        margin: 24px 0 0 20px;
+                    }
+                    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+                        float: left;
+                        font-size: 16px;
+                        margin: 24px 0 0 20px;
+                    }                    
+                }
+            }
+            span {
+                font-size: 48px;
+                font-family: $ubuntu;
+                font-weight: bold;
+                color: #f6436b;
+                letter-spacing: 0px;
+            }
+            span.timeframe {
+                font-size: 18px;
+                font-family: $ubuntu;
+                font-weight: normal;
+                color: $white;
+                text-transform: lowercase;
+            }
+        }
+        .price-table {
+            margin-top: 50px;
+            @media (max-width: 650px) { 
+                margin-top: 0px;
+            }
+            .block-topper-spacer {
+                padding: 15px 0px;
+            }
+            .block-topper {
+                background: #f6436b;
+                padding: 5px 0px;
+                color: $white;
+                letter-spacing: 2px;
+                @media (max-width: 650px) { 
+                    margin-top: 30px;
+                }
+            }
+            .top-block {
+                background: $black;
+                color: $white;
+                padding: 20px 0px 40px;
+                h3 {
+                    font-family: $ubuntu;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    letter-spacing: 2px;
+                    @media (max-width: 650px) { 
+                        font-size: 17px;
+                        letter-spacing: 1px;
+                    }
+                }
+                .short-sale {
+                    font-style: italic;
+                    font-size: 16px;
+                    font-family: Georgia, serif;
+                    color: #48c98f;
+                    .small {
+                        margin-top: 60px;
+                        @media (max-width: 650px) { 
+                            margin-top: 0px;
+                        }
+                    }
+                    .big {
+                        margin-top: 30px;
+                        @media (max-width: 650px) { 
+                            margin-top: 0px;
+                        }
+                    }
+                }
+                a.main-cta {
+                        @media (max-width: 650px) { 
+                            display: block;
+                            padding: 20px;
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            color: $white;
+                            margin-top: 30px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            background: #f6436b;
+                            width: 80%;
+                            text-align: center;
+                            font-weight: 600;
+                            font-family: $ubuntu;
+                            text-transform: uppercase;
+                        }
+                    }
+                    a.second-cta {
+                        @media (max-width: 650px) { 
+                            display: block;
+                            padding: 20px;
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            color: $white;
+                            margin-top: 30px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            background: #3c9ef4;
+                            width: 80%;
+                            text-align: center;
+                            font-weight: 600;
+                            font-family: $ubuntu;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                .popular {
+                    font-style: italic;
+                    font-size: 18px;
+                    font-family: Georgia, serif;
+                    color:#f6436b;
+                    margin-top: 40px;
+                    @media (max-width: 650px) { 
+                        margin-top: 0px;
+                    }
+                }
+                .big-price {
+                    font-size: 75px;
+                    text-transform: uppercase;
+                    margin: -13px 0px -22px;
+                    span.money {
+                        font-size: 20px;
+                        vertical-align: super;
+                        margin-top: 5px;
+                    }
+                    span {
+                        font-size: 15px;
+                    }
+                }
+                .normal-price {
+                    font-size: 24px;
+                    color: #c7c7c7;
+                    text-transform: uppercase;
+                    margin-top: -13px;
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+        .package {
+            background: $white;
+            color: #3d3d3d;
+            padding: 20px;
+            text-align: left;
+            ul {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                li {
+                    border-bottom: 1px solid #eae8e8;
+                    padding: 15px 15px 15px 30px;
+                    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+                        padding: 10px 0px 10px 5px;
+                    }
+                }
+            }
+            a.cta {
+                display: block;
+                padding: 20px;
+                font-size: 14px;
+                letter-spacing: 1px;
+                color: $white;
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                background: #3c9ef4;
+                width: 80%;
+                text-align: center;
+                font-weight: 600;
+                font-family: $ubuntu;
+                text-transform: uppercase;
+                @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+                    font-size: 10px;
+                }
+            }
+            a.main-cta {
+                display: block;
+                padding: 20px;
+                font-size: 14px;
+                letter-spacing: 1px;
+                color: $white;
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                background: #f6436b;
+                width: 80%;
+                text-align: center;
+                font-weight: 600;
+                font-family: $ubuntu;
+                text-transform: uppercase;
+                 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+                            font-size: 10px;
+                        }
+            }
+        }
+        .moneyback {
+            color: $white;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 20px;
+        }
     }
+}
     .faq-section { 
-        height: 600px;
-        padding: 70px 0 0;
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        height: 900px;
+        @extend .sections;
         background-image: url('./images/faq-footer.jpg');
              /* Mobile Photo */
+             
         @media (max-width: 650px) {
-            background-image: url('./images/faq-footer.jpg'); height: 300px;
+            background-attachment: fixed;
+            background-image: url("./images/faq-footer.jpg");
+            height: 1560px;
+        }
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            background-image: url("./images/faq-footer.jpg");
+            height: 1175px;
         }
         .thick-divider {
                 border-top: 5px solid #6f6666;
         }
         h3 {
             font-size: 15px;
-            font-family: 'Open Sans', sans-serif;
+            font-family: $ubuntu;
             text-transform: uppercase;
-            font-weight: bold;
             text-align: left;
             padding: 0px;
             margin-top: 40px;
             margin-bottom: 20px;
+            @media (max-width: 650px) { 
+                text-align: center;
+            }
         }
         p {
             text-align: left;
             font-size: 14px;
+            @media (max-width: 650px) { 
+                text-align: center;
+            }
+            @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+                text-align: left;
+            }
         }
-    
+    }
+    .footer-section {
+        margin: 80px 0 0;
+        text-align: left;
+        color: #606060;
+            a {
+                color: #606060;
+            }
+        .footer-wrapper {
+            padding: 20px 20px 40px;
+            .footer-menu {
+                margin-bottom: 30px;
+                .footer-nav {
+                    ul { 
+                            list-style:none;
+                            margin: 0px;
+                            padding: 0px;
+                        li{
+                            text-align:center;
+                            display:inline-block;
+                            @media (max-width: 650px) { 
+                                display: block;
+                            }
+                        }
+                        li:before {
+                            content: " | ";
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            @media (max-width: 650px) { 
+                                content: "";
+                                margin-left: 0px;
+                                margin-right: 0px;
+                            }
+                        }
+                        li:first-child:before {
+                            content: none;
+                        }
+                    }    
+                }
+            }
+            .btn-cta {
+                background: none repeat scroll 0 0 #F6436B;
+                color: $white;
+                font-family: $ubuntu;
+                font-style: normal;
+                font-size: 15px;
+                letter-spacing: 1px;
+                padding: 10px 40px;
+                text-transform: uppercase;
+                width: 200px;
+                @media (max-width: 650px) { 
+                    font-size: 11px;
+                }
+            }
+            .last-chance {
+                text-align: right;
+                margin-top: 0px;
+                p {
+                    text-align: right;
+                    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+                    text-align: center;
+                }
+                }
+                @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+                    text-align: center;
+                    margin: 30px 0 0;
+                }
+                @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { 
+                    margin-top: 0px;
+                }
+                @media (max-width: 650px) {
+                    display: none;
+                }
+            }
+        }
     }
     .btn-cta {
         background: none repeat scroll 0 0 #F6436B;
         color: $white;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $ubuntu;
         font-style: normal;
         font-size: 24px;
-        font-weight: bold;
-        letter-spacing: 0px;
+        letter-spacing: 1px;
         padding: 10px 40px;
         text-transform: uppercase;
+        @media (max-width: 650px) {
+            font-size: 15px;
+        }
     }
     .hideme {
         opacity:0;
@@ -274,19 +711,48 @@ h1 {
 #wrap {
     .navi {
         height: 106px;
+        padding-top: 11px;
+        background: $white;
         @media (max-width: 650px) {
             height: auto;
         }
-    } 
+    }
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) { 
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: auto;
+            width: 54%;
+        }
+        .nav > li > a {
+            display: block;
+            margin: 0 15px 0 0;
+            position: relative;
+            font-size: 15px;
+        }
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .nav > li > a {
+            display: block;
+            margin: 0 15px 0 0;
+            position: relative;
+            font-size: 18px;
+        }
+    }
 }
 
 
-/* *********************************
-   Some Style Overrides on Bootstrap
-  ********************************** */
+//Some Style Overrides on Bootstrap
   
 .small-nav {
     background: rgba(255,255,255,0.5);
+}
+.navbar-nav {
+    margin-top: 20px;
 }
 .navbar-inverse {
     background: rgba(62,195,246,0);
@@ -317,22 +783,30 @@ h1 {
   }
 }
 
-
 .navbar-inverse .navbar-nav > li > a {
-color: black;
-  
-
+    color: black;
+    font-family: $ubuntu;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: lighter;
+    
+    @media (max-width: 650px) {
+        border-bottom: 1px solid #DDDDDD;
+        color: #000000;
+        font-family: "Ubuntu",sans-serif;
+        font-size: 16px;
+        font-weight: lighter;
+        text-align: center;
+        text-transform: uppercase;
+    }
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
 color: #22F;
 
 }
-ul.nav {
-}
 
-/* *********************************
-           Toolbar Logo
-  ********************************** */
+//Toolbar Logo
+
 .small-logo-container {
     padding-top: $navbar-height;
     height: $navbar-height;
@@ -345,9 +819,8 @@ ul.nav {
   padding-bottom: $small-logo-padding;
 }
 
-/* *********************************
-           Big Logo
-  ********************************** */
+// Big Logo
+
 .big-logo-row {
   background: $white;
   .big-logo-container {
@@ -355,9 +828,10 @@ ul.nav {
   }
 }
 
-
-
-
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #8F8F8F;
+    background: none;
+}
 
 
 // FONTS

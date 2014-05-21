@@ -28,10 +28,10 @@ $(window).scroll(function () {
     if (smallPadding < 0) {
         smallPadding = 0;
     }
-
     $('.small-logo-container ').css({
         "padding-top": smallPadding
     });
+
 
     var navOpacity = ySmall / smallLogoHeight;
     if (navOpacity > 1) {
