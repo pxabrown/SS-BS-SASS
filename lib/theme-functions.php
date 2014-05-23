@@ -160,20 +160,23 @@ function mb_scripts() {
 		wp_enqueue_script('bootstrap-hover', get_template_directory_uri() . '/assets/js/vendor/twitter-bootstrap-hover-dropdown.min.js', array('jquery', 'bootstrap'), false, true );
 		//MAIN SCRIPTS
 		wp_enqueue_script('mainscripts', get_template_directory_uri() . '/assets/js/source/main.js', array('jquery'), false, true );
-		//PARALLAX
-		wp_enqueue_script('parallax', get_template_directory_uri() . '/assets/js/source/parallax-plugin.js', array('jquery'), false, true );
-		if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
-        function my_jquery_enqueue() {
+		
+		if (!is_admin()) add_action("wp_enqueue_scripts", "custom_jquery_enqueue", 11);
+        function custom_jquery_enqueue() {
         //LOAD JQUERY
         wp_deregister_script('jquery');
-        wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null);
+        wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js", false, null);
+        
         //LOAD FLEXSLIDER   
-        wp_enqueue_script('jquery');
         wp_enqueue_script('flexslider', get_template_directory_uri() . '/assets/flexslider/jquery.flexslider.js', array('jquery'), false, true );
            
-        wp_enqueue_style( 'my-style', get_template_directory_uri() . '/assets/flexslider/flexslider.css', false, '1.0', 'all' ); // Inside a parent theme           
+        wp_enqueue_style( 'my-style', get_template_directory_uri() . '/assets/flexslider/flexslider.css', false, '1.0', 'all' ); // Inside a parent theme  
+        
+        //LOAD VALIDATOR   
+        wp_enqueue_script('js-validator', get_template_directory_uri() . '/assets/dist/js/bootstrapValidator.min.js', array('jquery'), false, true );
            
-           }		
+        wp_enqueue_style( 'validator', get_template_directory_uri() . '/assets/dist/css/bootstrapValidator.min.css', false, '1.0', 'all' );            
+        }		
 	}
 }
 

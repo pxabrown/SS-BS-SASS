@@ -5100,8 +5100,12 @@ h6 {
         height: 1075px; } }
     @media (min-width: 992px) and (max-width: 1199px) {
       .big-wrapper .manage-biz-section {
-        background-image: url("./images/small-screen/md-screen-manage-section.jpg");
-        height: 767px; } }
+        background: url("./images/small-screen/md-screen-manage-section.jpg") no-repeat center center fixed;
+        height: 767px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; } }
     .big-wrapper .manage-biz-section .easily-manage {
       margin-left: auto;
       margin-right: auto;
@@ -5371,16 +5375,25 @@ h6 {
           font-size: 16px;
           font-family: Georgia, serif;
           color: #48c98f; }
-          .big-wrapper .price-section .price-table .top-block .short-sale .small {
+          .big-wrapper .price-section .price-table .top-block .short-sale .smallpack {
             margin-top: 60px; }
             @media (max-width: 650px) {
-              .big-wrapper .price-section .price-table .top-block .short-sale .small {
+              .big-wrapper .price-section .price-table .top-block .short-sale .smallpack {
                 margin-top: 0px; } }
           .big-wrapper .price-section .price-table .top-block .short-sale .big {
             margin-top: 30px; }
             @media (max-width: 650px) {
               .big-wrapper .price-section .price-table .top-block .short-sale .big {
                 margin-top: 0px; } }
+        .big-wrapper .price-section .price-table .top-block .popular {
+          font-style: italic;
+          font-size: 18px;
+          font-family: Georgia, serif;
+          color: #f6436b;
+          margin-top: 40px; }
+          @media (max-width: 650px) {
+            .big-wrapper .price-section .price-table .top-block .popular {
+              margin-top: 0px; } }
         @media (max-width: 650px) {
           .big-wrapper .price-section .price-table .top-block a.main-cta {
             display: block;
@@ -5413,15 +5426,6 @@ h6 {
             font-weight: 600;
             font-family: "Ubuntu", sans-serif;
             text-transform: uppercase; } }
-        .big-wrapper .price-section .price-table .top-block .popular {
-          font-style: italic;
-          font-size: 18px;
-          font-family: Georgia, serif;
-          color: #f6436b;
-          margin-top: 40px; }
-          @media (max-width: 650px) {
-            .big-wrapper .price-section .price-table .top-block .popular {
-              margin-top: 0px; } }
         .big-wrapper .price-section .price-table .top-block .big-price {
           font-size: 75px;
           text-transform: uppercase;

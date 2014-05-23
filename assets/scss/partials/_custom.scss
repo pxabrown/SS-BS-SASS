@@ -98,8 +98,12 @@ h6 {
                 height: 1075px;
             }
             @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { 
-                background-image: url('./images/small-screen/md-screen-manage-section.jpg');
+                background: url('./images/small-screen/md-screen-manage-section.jpg') no-repeat center center fixed;
                 height: 767px;
+                  -webkit-background-size: cover;
+                  -moz-background-size: cover;
+                  -o-background-size: cover;
+                  background-size: cover;
             }
             
         .easily-manage {
@@ -424,7 +428,7 @@ h6 {
                     font-size: 16px;
                     font-family: Georgia, serif;
                     color: #48c98f;
-                    .small {
+                    .smallpack {
                         margin-top: 60px;
                         @media (max-width: 650px) { 
                             margin-top: 0px;
@@ -437,6 +441,17 @@ h6 {
                         }
                     }
                 }
+                .popular {
+                    font-style: italic;
+                    font-size: 18px;
+                    font-family: Georgia, serif;
+                    color:#f6436b;
+                    margin-top: 40px;
+                    @media (max-width: 650px) { 
+                        margin-top: 0px;
+                    }
+                }
+
                 a.main-cta {
                         @media (max-width: 650px) { 
                             display: block;
@@ -474,17 +489,7 @@ h6 {
                         }
                     }
 
-                .popular {
-                    font-style: italic;
-                    font-size: 18px;
-                    font-family: Georgia, serif;
-                    color:#f6436b;
-                    margin-top: 40px;
-                    @media (max-width: 650px) { 
-                        margin-top: 0px;
-                    }
-                }
-                .big-price {
+                                .big-price {
                     font-size: 75px;
                     text-transform: uppercase;
                     margin: -13px 0px -22px;
@@ -877,4 +882,12 @@ color: #22F;
     font-style: normal;
 
 }
+
+
+
+
+
+
+
+
 

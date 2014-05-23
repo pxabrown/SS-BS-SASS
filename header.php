@@ -23,7 +23,7 @@
 <!--[if lt IE 8]>
 	    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	<![endif]-->
-	
+<div class="onepage">	
 <?php if(is_front_page()) { ?>
 <div id="wrap">
 <div class="navi"> 
@@ -159,17 +159,6 @@
     </section>
   </div>
 </div>
-<!-- INLINE JS WILL NEED TO BE MOVED --> 
-            <script type="text/javascript">
-                $(window).load(function(){
-                  $('.flexslider').flexslider({
-                    animation: "slide",
-                    start: function(slider){
-                      $('body').removeClass('loading');
-                    }
-                  });
-                });
-              </script> 
 <!-- END TESTIMONIAL SECTION --> 
 
 <!-- START PRICE SECTION -->
@@ -196,7 +185,7 @@
               <div class="block-topper-spacer"></div>
                   <div class="top-block"><h3>Studio Management</h3>
                   <div class="short-sale">
-                  <div class="small">24 hour sale get it now for</div>
+                  <div class="smallpack">24 hour sale get it now for</div>
                   </div>
                   <div class="big-price">
                       <span class="money">$</span>199<span>/ yr</span>
@@ -379,6 +368,84 @@
   </div>
   <!-- END FAQ/FOOTER SECTION --> 
 </div>
+</div> <!-- END MAIN -->
+
+<div class="signupstepone">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+   <!-- form: -->
+
+
+
+
+<form>
+<div class="registerForm">
+    <div class="form-group">
+        <input type="text" class="form-control" name="username" placeholder="Username" />
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" name="email" placeholder="Email address" />
+    </div>
+    <button type="submit" name="submitButton" class="btn btn-primary">Submit</button>
+</div>
+</form>
+
+<script>
+$(document).ready(function() {
+    $('.registerForm').bootstrapValidator({
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            username: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email is required and cannot be empty'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+
+
+
+   <!-- :form -->
+   
+   
+   </div>
+    </div>
+    </div>
+        
+</div>
+<div class="signupsteptwo"></div>
+
+
 <!-- WRAP -->
 <?php } else { ?><!-- EVERYTHING ELSE DISPLAY AS BELOW -->
 <div class="navi"> 

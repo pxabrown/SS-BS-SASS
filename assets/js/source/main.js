@@ -6,6 +6,19 @@
     });
 })(jQuery);
 
+
+//FLEXSLIDER
+// Can also be used with $(document).ready()
+                $(window).load(function(){
+                  $('.flexslider').flexslider({
+                    animation: "slider",
+                    start: function(slider){
+                      $('body').removeClass('loading');
+                    }
+                  });
+                });
+
+
 // SCROLLING MENU
 $(window).scroll(function () {
     var navbarColor = "255, 255, 255"; //color attr for rgba
