@@ -47,6 +47,11 @@
 	
 <!-- 	<a class="navbar-brand scroll-top hideme" data-id="wrap" href="#wrap">Scroll Up</a> -->
 
+<ul class="nav pull-right scroll-top">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
+
+
   <?php wp_footer(); ?>
 
 </body>

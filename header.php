@@ -13,8 +13,9 @@
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon.ico">
 <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/apple-touch-icon.png">
 <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
+<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>-->
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic,300italic,300,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 <?php // get options from theme $options=g et_option( 'theme_settings'); //show tracking code for the header echo stripslashes($options[ 'tracking']); ?>
 </head>
@@ -26,7 +27,9 @@
 <div class="onepage">	
 <?php if(is_front_page()) { ?>
 <div id="wrap">
-<div class="navi"> 
+ 
+<div class="navi">
+
   <!-- Fixed navbar -->
   <div class="small-nav navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -40,6 +43,8 @@
           <li><a class="scroll-link hidden-xs" data-id="features" href="#features">Features</a> </li>
           <li><a class="scroll-link" data-id="pricing" href="#pricing">pricing</a> </li>
           <li><a class="scroll-link" data-id="faq" href="#faq">FAQs</a> </li>
+          <li><a href="#">Login</a> </li>
+          <li class="signup"><a href="#">Sign Up</a> </li>
         </ul>
       </div>
       <!--/.nav-collapse --> 
@@ -47,21 +52,23 @@
   </div>
   <!-- Small nav -->
   
-  <div class="container-fluid big-logo-row">
+
+<div class="container-fluid big-logo-row">
     <div class="container">
       <div class="row">
         <div class="col-xs-5 big-logo-container ">
-          <div class="big-logo"> <a class="scroll-link" data-id="wrap" href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/simplystudio-logo.png" alt="SimplyStudio"></a> </div>
+          <div class="big-logo"> <a class="scroll-link" data-id="wrap" href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/small-logo.png" alt="SimplyStudio"></a> </div>
         </div>
-        <!--/.col-xs-12 --> 
+        <!--/.col-xs-12 -->
       </div>
-      <!--/.row --> 
-    </div>
+      <!--/.row -->
+      </div>
     <!--/.container --> 
   </div>
   <!--/.container-fluid --> 
+
 </div>
-<div class="big-wrapper">
+<div class="big-wrapper" id="wrapper">
 <div class="manage-biz-section" id="easily-manage">
   <section class="col-xs-12">
     <div class="easily-manage">
@@ -85,7 +92,7 @@
       <h1 class="para-text">Take a Quick Tour</h1>
       <div class="short-video-p">
         <p>Watch A Short Video And Learn The Benefits For Your Business</p>
-        <div class="col-xs-12 col-lg-12 centered video"> <img id="vid" src="<?php echo get_stylesheet_directory_uri(); ?>/images/watch-video-lg.png" data-video="//player.vimeo.com/video/56050401?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1"> </div>
+        <div class="col-xs-12 col-lg-12 centered video"> <img id="vid" src="<?php echo get_stylesheet_directory_uri(); ?>/images/watch-video-lg.png" data-video="////player.vimeo.com/video/56050401?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1"> </div>
         <div class="col-xs-12 get-started">
           <h3>Ready To Get Started?</h3>
           <p>Click the button below to get an instant $100 Off!</p>
@@ -370,27 +377,195 @@
 </div>
 </div> <!-- END MAIN -->
 
-<div class="signupstepone">
+<div class="signupstepone" id="stepone">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-   <!-- form: -->
-
-
-
-
+            <div class="col-md-4">
+            <div class="stepone"><span>1</span> Account
+                <div class="subtext">Basic Account Info</div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="steptwo"><span>2</span> personal
+                <div class="subtext">personal details</div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="stepthree"><span>3</span> payment
+                <div class="subtext">Select method</div>
+            </div>
+            </div>
+            <div class="clearfix"></div>
+<!-- form: -->
+<div class="col-md-6 centered">
+<h3>Hey There!</h3>
+<p>Sign Up, it takes less then a minute to get started</p>
 <form>
 <div class="registerForm">
     <div class="form-group">
-        <input type="text" class="form-control" name="username" placeholder="Username" />
+        <input type="text" class="form-control" name="username" placeholder="Full Name" />
     </div>
     <div class="form-group">
         <input type="text" class="form-control" name="email" placeholder="Email address" />
     </div>
-    <button type="submit" name="submitButton" class="btn btn-primary">Submit</button>
+    <div class="form-group">
+        <input type="password" class="form-control" name="password" placeholder="Password" />
+    </div>
+    <button type="submit" name="submitButton" class="btn btn-primary form-cta">Continue</button>
+    <div class="clearfix"></div>
+    <div class="pull-right cancel"><a href="#">Get me out of here <span>X</span></a></div>
 </div>
 </form>
+</div>
+<!-- form: -->
+   </div>
+    </div>
+    </div>
+        
+</div>
+<div class="signupsteptwo" id="steptwo"><!-- STEP TWO -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="col-md-4">
+            <div class="stepone"><span>1</span> Account
+                <div class="subtext">Basic Account Info</div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="steptwo"><span>2</span> personal
+                <div class="subtext">personal details</div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="stepthree"><span>3</span> payment
+                <div class="subtext">Select method</div>
+            </div>
+            </div>
+            <div class="clearfix"></div>
+<!-- form: -->
+<div class="col-md-8 centered">
+<h3>Okay, Full Name</h3>
+<p>That was quick! But, before you're done we just need some more details about you to create your account.</p>
+<form>
+<div class="registerForm">
 
+    <div class="form-group">
+        <input type="text" class="form-control" name="phone" placeholder="Phone" />
+    </div>
+<!--
+    <div class="form-group">
+        <input type="text" class="form-control" name="companyname" placeholder="Company Name" />
+    </div>
+-->
+    
+    <div class="form-group">
+        <input type="text" class="form-control" name="address" placeholder="Address" />
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" name="city" placeholder="City" />
+    </div>
+
+<div class="row">
+    <div class="form-group col-md-3">
+        <input type="text" class="form-control" name="state" placeholder="State" />
+    </div>
+    <div class="form-group  col-md-3">
+        <input type="text" class="form-control" name="zip" placeholder="Zip/Postal Code" />
+    </div>
+    
+    <div class="form-group col-md-6">
+        <input type="text" class="form-control" name="country" placeholder="Country" />
+    </div>
+</div>
+    <button type="submit" name="submitButton" class="btn btn-primary form-cta">Continue</button>
+    <div class="clearfix"></div>
+    <div class="pull-right cancel"><a href="#">Get me out of here <span>X</span></a></div>
+
+</div>
+</form>
+</div>
+<!-- form: -->
+
+   </div>
+    </div>
+    </div>
+        
+</div>
+
+
+<div class="signupstepthree" id="stepthree"><!-- STEP THREE -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+            <div class="col-md-4">
+            <div class="stepone"><span>1</span> Account
+                <div class="subtext">Basic Account Info</div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="steptwo"><span>2</span> personal
+                <div class="subtext">personal details</div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="stepthree"><span>3</span> payment
+                <div class="subtext">Select method</div>
+            </div>
+            </div>
+            <div class="clearfix"></div>
+<!-- form: -->
+<div class="col-md-8 centered">
+<h3>Yay! You're almost done!</h3>
+<p>Great news! Buying "package A" now, gets you $100 off so you'll pay only $299 Awesome!</p>
+<form>
+<div class="registerForm">
+<div class="row">
+<div class="creditcardinfo">Please enter your credit card information </div>
+</div>    
+<div class="row">
+    <div class="form-group col-md-6">
+        <input type="text" class="form-control" name="cc" placeholder="Credit Card Number" />
+    </div>
+    <div class="form-group col-md-3">
+        <input type="text" class="form-control" name="securitycode" placeholder="Credit Card Code" />
+    </div>
+    
+    <div class="form-group col-md-3">
+        <input type="text" class="form-control" name="expirydate" placeholder="Expiry Date" />
+    </div>
+    
+    
+    
+    </div>
+</div>
+        <div class="form-group">
+            <button type="submit" name="submitButton" class="btn btn-primary form-cta">Create Account!</button>
+        </div>
+<div class="clearfix"></div>
+<div class="greatnews"></div>
+
+<!-- GIFT CODE -->
+    <div class="row">
+        <div class="form-group col-md-4 centered giftcode">
+        <div class="">Have a Gift Code?</div>
+            <input type="text" class="form-control" name="giftcode" placeholder="Gift Code" />
+        </div>
+    </div>
+
+
+<!--     <div class="pull-right cancel"><a href="#">Get me out of here <span>X</span></a></div> -->
+</div>
+</form>
+</div>
+<!-- form: -->
+<div class="clearfix"></div>
+<h6></h6>
+<div class="cc-money-back-seal centered"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cc-money-back-seal.png" alt="SimplyStudio"</div>
+
+<!-- FORM VALIDATION -->
 <script>
 $(document).ready(function() {
     $('.registerForm').bootstrapValidator({
@@ -435,15 +610,11 @@ $(document).ready(function() {
 
 
 
-   <!-- :form -->
-   
-   
    </div>
     </div>
     </div>
         
 </div>
-<div class="signupsteptwo"></div>
 
 
 <!-- WRAP -->
@@ -458,10 +629,10 @@ $(document).ready(function() {
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#tour">Tour</a> </li>
-          <li><a href="#features">Features</a> </li>
-          <li><a href="#pricing">pricing</a> </li>
-          <li><a href="#faq">FAQs</a> </li>
+          <li><a href="<?php echo home_url(); ?>#tour">Tour</a> </li>
+          <li><a href="<?php echo home_url(); ?>#features">Features</a> </li>
+          <li><a href="<?php echo home_url(); ?>#pricing">pricing</a> </li>
+          <li><a href="<?php echo home_url(); ?>#faq">FAQs</a> </li>
         </ul>
       </div>
       <!--/.nav-collapse --> 

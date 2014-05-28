@@ -52,6 +52,9 @@ h1 {
 h6 {
     border-top: 1px solid #DEDCDC;
 }
+#wrapper {
+    display: none;
+}
 .centered {
     float: none;
     margin-left: auto;
@@ -469,6 +472,9 @@ h6 {
                             font-family: $ubuntu;
                             text-transform: uppercase;
                         }
+                        &:hover {
+                            background: #2f89e2;
+                        }
                     }
                     a.second-cta {
                         @media (max-width: 650px) { 
@@ -486,6 +492,9 @@ h6 {
                             font-weight: 600;
                             font-family: $ubuntu;
                             text-transform: uppercase;
+                        }
+                        &:hover {
+                            background: #2f89e2;
                         }
                     }
 
@@ -544,6 +553,10 @@ h6 {
                 font-weight: 600;
                 font-family: $ubuntu;
                 text-transform: uppercase;
+                &:hover {
+                    background: #2f89e2;
+                    text-decoration: none;
+                }
                 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
                     font-size: 10px;
                 }
@@ -563,6 +576,10 @@ h6 {
                 font-weight: 600;
                 font-family: $ubuntu;
                 text-transform: uppercase;
+                &:hover {
+                    background: #2f89e2;
+                    text-decoration: none;
+                }
                  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
                             font-size: 10px;
                         }
@@ -656,7 +673,7 @@ h6 {
                     }    
                 }
             }
-            .btn-cta {
+            a.btn-cta {
                 background: none repeat scroll 0 0 #F6436B;
                 color: $white;
                 font-family: $ubuntu;
@@ -666,6 +683,9 @@ h6 {
                 padding: 10px 40px;
                 text-transform: uppercase;
                 width: 200px;
+                &:hover {
+                    background: #2f89e2;
+                }
                 @media (max-width: 650px) { 
                     font-size: 11px;
                 }
@@ -692,7 +712,7 @@ h6 {
             }
         }
     }
-    .btn-cta {
+    a.btn-cta {
         background: none repeat scroll 0 0 #F6436B;
         color: $white;
         font-family: $ubuntu;
@@ -701,6 +721,9 @@ h6 {
         letter-spacing: 1px;
         padding: 10px 40px;
         text-transform: uppercase;
+        &:hover {
+            background: #2f89e2;
+        }
         @media (max-width: 650px) {
             font-size: 15px;
         }
@@ -714,8 +737,9 @@ h6 {
     }
 }
 #wrap {
+    //display: none;
     .navi {
-        height: 106px;
+        height: 60px;
         padding-top: 11px;
         background: $white;
         @media (max-width: 650px) {
@@ -735,17 +759,500 @@ h6 {
             font-size: 15px;
         }
     }
-    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-        .navbar-nav {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+    .navbar-nav {
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+            width: 78%;
+            li.signup a {
+                background: #2f89e2;
+                color: $white;
+                border-radius: 5px;
+                padding: 7px;
+                margin-top: 8px;
+                &:hover {
+                    background: #f6436b;
+                    color: $white;
+                }
+            }
+            li a {
+                color: $black;
+            &:hover {
+                    color: #f6436b;
+                }
+            }
         }
         .nav > li > a {
             display: block;
             margin: 0 15px 0 0;
             position: relative;
+            font-size: 15px;
+        }
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { 
+    .navbar-nav {
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            li.signup a {
+                background: #2f89e2;
+                color: $white;
+                border-radius: 5px;
+                padding: 7px;
+                margin-top: 8px;
+                &:hover {
+                    background: #f6436b;
+                    color: $white;
+                }
+            }
+            li a {
+                color: $black;
+            &:hover {
+                    color: #f6436b;
+                }
+            }
+        }
+        .nav > li > a {
+            display: block;
+            margin: 0 15px 0 0;
+            position: relative;
+            font-size: 15px;
+        }
+    }
+
+    @media (min-width: $screen-lg-min) { 
+    .navbar-nav {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            li.signup a {
+                background: #2f89e2;
+                color: $white;
+                border-radius: 5px;
+                padding: 7px;
+                margin-top: 8px;
+                &:hover {
+                    background: #f6436b;
+                    color: $white;
+                }
+            }
+            li a {
+                color: $black;
+            &:hover {
+                    color: #f6436b;
+                }
+            }
+        }
+        .nav > li > a {
+            display: block;
+            margin: 0 15px 0 0;
+            position: relative;
+            font-size: 15px;
+        }
+    }
+}
+.onepage {
+    .cancel {
+        display: block;
+            a {
+            color: #a5b1bc;
+            font-family: $ubuntu;
+            text-transform: uppercase;
+            margin-top: 20px;
+            display: block;
+            &:hover {
+                color: #f3446b;
+                text-decoration: none;
+                span {
+                background: #f3446b;
+                color: $black;
+                padding: 3px 7px;
+                border-radius: 30px;
+                }
+            }
+            span {
+                background: #a5b1bc;
+                color: $black;
+                padding: 3px 7px;
+                border-radius: 30px;
+                &:hover { 
+                    background: #f3446b;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .form-control {
+        font-size: 17px;
+    }
+    .signupstepone {
+        background: url('./images/register-background.jpg') no-repeat center center;
+        min-height: 967px;
+        padding-top: 30px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin-top: 100px;     
+        color: $white;
+        @media (max-width: 650px) {
+            min-height: 830px;
+        }
+        p {
+            color: #D2D2D2;
+            font-size: 21px;
+            font-weight: 100;
+            letter-spacing: 1px;
+            margin: 32px 0 70px;
+            @media (max-width: 650px) {
+                margin: 32px 0 20px;
+            }
+        }
+        .form-control {
+            height: 53px;
+        }
+        .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
+            border: 1px solid #FFADAB;
+            color: #FFADAB;
+            padding: 9px;
+        }
+        form {
+            margin-top: 35px;
+            .form-cta {
+                background: none repeat scroll 0 0 #F6436B;
+                border: medium none;
+                float: right;
+                padding: 13px 34px;
+            }
+        }
+        h3 {
+            font-family: 'Bad Script', cursive;
+            color: $white;
+            font-size: 49px;
+            margin-top: 100px;
+            @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                margin-top: 50px;
+            }
+            @media (max-width: 650px) {
+                margin-top: 50px; 
+            }
+        }
+    }
+    .stepone {
+        background: #a5b1bc;
+        padding: 10px 13px;
+        color: #012f57;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+        
+        span {
+            background: #f6436b;
+            -webkit-border-radius: 50px 50px 50px 50px;
+            border-radius: 50px 50px 50px 50px;
+            float: left;
+            margin: 0 15px 0 0;
+            padding: 7px 15px;
+            color: $white;
+        }
+        .subtext {
+            font-size: 12px;
+            font-weight: normal;
+            margin-top: -3px;
+            padding: 0;
+        }
+    }
+    .steptwo {
+        background: #1e71b4;
+        padding: 10px 13px;
+        color: #084c7b;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+        
+        span {
+            background: #084b7b;
+            -webkit-border-radius: 50px 50px 50px 50px;
+            border-radius: 50px 50px 50px 50px;
+            float: left;
+            margin: 0 15px 0 0;
+            padding: 7px 15px;
+            color: #3796e9;
+        }
+        .subtext {
+            font-size: 12px;
+            font-weight: normal;
+            margin-top: -3px;
+            padding: 0;
+        }
+    }
+    .stepthree {
+        background: #1e71b4;
+        padding: 10px 13px;
+        color: #084c7b;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+        span {
+            background: #084b7b;
+            -webkit-border-radius: 50px 50px 50px 50px;
+            border-radius: 50px 50px 50px 50px;
+            float: left;
+            margin: 0 15px 0 0;
+            padding: 7px 15px;
+            color: #3796e9;
+        }
+        .subtext {
+            font-size: 12px;
+            font-weight: normal;
+            margin-top: -3px;
+            padding: 0;
+        }
+    }
+    
+        .signupsteptwo {
+            background: url('./images/register-background.jpg') no-repeat center center;
+            min-height: 967px;
+            padding-top: 30px;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: $white;
+            @media (max-width: 650px) {
+                min-height: 1165px;
+            }
+            p {
+                color: #D2D2D2;
+                font-size: 21px;
+                font-weight: 100;
+                letter-spacing: 1px;
+                margin: 32px 0 70px;
+                @media (max-width: 650px) {
+                    margin: 32px 0 20px;
+                }
+            }
+            .form-control {
+                height: 53px;
+            }
+        .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
+            border: 1px solid #FFADAB;
+            color: #FFADAB;
+            padding: 9px;
+        }
+        form {
+            margin-top: 35px;
+            .form-cta {
+                background: none repeat scroll 0 0 #F6436B;
+                border: medium none;
+                float: right;
+                padding: 13px 34px;
+            }
+        }
+        h3 {
+            font-family: 'Bad Script', cursive;
+            color: $white;
+            font-size: 49px;
+            margin-top: 100px;
+            @media (max-width: 650px) {
+                margin-top: 50px;
+            }
+        }
+        .stepone {
+            background: #1e71b4;
+            padding: 10px 13px;
+            color: #084c7b;
+            text-transform: uppercase;
+            font-weight: bold;
             font-size: 18px;
+            
+            span {
+                background: #084b7b;
+                -webkit-border-radius: 50px 50px 50px 50px;
+                border-radius: 50px 50px 50px 50px;
+                float: left;
+                margin: 0 15px 0 0;
+                padding: 7px 15px;
+                color: #3796e9;
+            }
+            .subtext {
+                font-size: 12px;
+                font-weight: normal;
+                margin-top: -3px;
+                padding: 0;
+            }
+        }
+        .steptwo {
+            background: #a5b1bc;
+            padding: 10px 13px;
+            color: #012f57;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            span {
+                background: #f6436b;
+                -webkit-border-radius: 50px 50px 50px 50px;
+                border-radius: 50px 50px 50px 50px;
+                float: left;
+                margin: 0 15px 0 0;
+                padding: 7px 15px;
+                color: $white;
+            }
+            .subtext {
+                font-size: 12px;
+                font-weight: normal;
+                margin-top: -3px;
+                padding: 0;
+            }
+        }
+    }
+    
+        
+    .signupstepthree {
+        background: url('./images/register-background.jpg') no-repeat center center;
+        min-height: 967px;
+        padding-top: 30px;
+        padding-bottom: 100px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        color: $white;
+        @media (max-width: 650px) {
+            padding-bottom: 50px;
+        }
+         p {
+            color: #D2D2D2;
+            font-size: 21px;
+            font-weight: 100;
+            letter-spacing: 1px;
+            margin: 32px 0 70px;
+            @media (max-width: 650px) {
+                margin: 32px 0 20px;
+            }
+        }
+        h6 {
+            margin-top: 40px;
+            border: 1px solid #677274;
+        }
+        .creditcardinfo {
+            font-size: 15px;
+            color: #fff;
+            font-style: italic;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .form-control {
+            height: 53px;
+        }
+        .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
+            border: 1px solid #FFADAB;
+            color: #FFADAB;
+            padding: 9px;
+        }
+        form {
+            margin-top: 35px;
+            .form-cta {
+                background: none repeat scroll 0 0 #F6436B;
+                border: medium none;
+                font-size: 20px;
+                margin-top: 20px;
+                padding: 20px 71px;
+                @media (max-width: 650px) {
+                    padding: 20px 55px;
+                }
+            }
+        }
+        h3 {
+            font-family: 'Bad Script', cursive;
+            color: $white;
+            font-size: 49px;
+            margin-top: 100px;
+            @media (max-width: 650px) { 
+                margin-top: 50px;
+            }
+        }
+        .giftcode {
+            margin-top: 50px;
+        }
+        .stepone {
+            background: #1e71b4;
+            padding: 10px 13px;
+            color: #084c7b;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            span {
+                background: #084b7b;
+                -webkit-border-radius: 50px 50px 50px 50px;
+                border-radius: 50px 50px 50px 50px;
+                float: left;
+                margin: 0 15px 0 0;
+                padding: 7px 15px;
+                color: #3796e9;
+            }
+            .subtext {
+                font-size: 12px;
+                font-weight: normal;
+                margin-top: -3px;
+                padding: 0;
+            }
+        }
+        .steptwo {
+            background: #1e71b4;
+            padding: 10px 13px;
+            color: #084c7b;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            span {
+                background: #084b7b;
+                -webkit-border-radius: 50px 50px 50px 50px;
+                border-radius: 50px 50px 50px 50px;
+                float: left;
+                margin: 0 15px 0 0;
+                padding: 7px 15px;
+                color: #3796e9;
+            }
+            .subtext {
+                font-size: 12px;
+                font-weight: normal;
+                margin-top: -3px;
+                padding: 0;
+            }
+        }
+        .stepthree {
+            background: #a5b1bc;
+            padding: 10px 13px;
+            color: #012f57;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            span {
+                background: #f6436b;
+                -webkit-border-radius: 50px 50px 50px 50px;
+                border-radius: 50px 50px 50px 50px;
+                float: left;
+                margin: 0 15px 0 0;
+                padding: 7px 15px;
+                color: $white;
+            }
+            .subtext {
+                font-size: 12px;
+                font-weight: normal;
+                margin-top: -3px;
+                padding: 0;
+            }
+        }
+        .cc-money-back-seal {
+            margin-top: 40px;
+        }
+        .greatnews {
+            font-size: 15px;
+        }
+        .awesome {
+            font-family: 'Bad Script', cursive;
+            font-size: 25px;
         }
     }
 }
@@ -757,7 +1264,7 @@ h6 {
     background: rgba(255,255,255,0.5);
 }
 .navbar-nav {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 .navbar-inverse {
     background: rgba(62,195,246,0);
@@ -792,7 +1299,7 @@ h6 {
     color: black;
     font-family: $ubuntu;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: lighter;
     
     @media (max-width: 650px) {
@@ -816,6 +1323,7 @@ color: #22F;
     padding-top: $navbar-height;
     height: $navbar-height;
     overflow: hidden;
+    margin-top: 0px;
   }
 
 .small-logo {
@@ -828,6 +1336,7 @@ color: #22F;
 
 .big-logo-row {
   background: $white;
+  margin-top: -4px;
   .big-logo-container {
     padding-top: 0px;
   }
@@ -837,8 +1346,20 @@ color: #22F;
     color: #8F8F8F;
     background: none;
 }
-
-
+.scroll-top {
+   position:fixed;
+   bottom:0;
+   right:6%;
+   z-index:100;
+   background: #f2f3f2;
+   font-size:24px;
+   border-top-left-radius:3px;
+   border-top-right-radius:3px;
+}
+.scroll-top a:link,.scroll-top a:visited {
+  color:#222;
+} 
+ 
 // FONTS
 
 @font-face {
@@ -852,10 +1373,6 @@ color: #22F;
     font-style: normal;
 
 }
-
-
-
-
 @font-face {
     font-family: 'aliquamregular';
     src: url('../assets/fonts/aliquamreg-webfont.eot');
@@ -867,10 +1384,6 @@ color: #22F;
     font-style: normal;
 
 }
-
-
-
-
 @font-face {
     font-family: 'aliquamitalic';
     src: url('../assets/fonts/aliquamrit-webfont.eot');
@@ -882,12 +1395,3 @@ color: #22F;
     font-style: normal;
 
 }
-
-
-
-
-
-
-
-
-

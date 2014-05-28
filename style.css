@@ -5060,6 +5060,9 @@ h1 {
 h6 {
   border-top: 1px solid #DEDCDC; }
 
+#wrapper {
+  display: none; }
+
 .centered {
   float: none;
   margin-left: auto;
@@ -5410,6 +5413,8 @@ h6 {
             font-weight: 600;
             font-family: "Ubuntu", sans-serif;
             text-transform: uppercase; } }
+        .big-wrapper .price-section .price-table .top-block a.main-cta:hover {
+          background: #2f89e2; }
         @media (max-width: 650px) {
           .big-wrapper .price-section .price-table .top-block a.second-cta {
             display: block;
@@ -5426,6 +5431,8 @@ h6 {
             font-weight: 600;
             font-family: "Ubuntu", sans-serif;
             text-transform: uppercase; } }
+        .big-wrapper .price-section .price-table .top-block a.second-cta:hover {
+          background: #2f89e2; }
         .big-wrapper .price-section .price-table .top-block .big-price {
           font-size: 75px;
           text-transform: uppercase;
@@ -5473,6 +5480,9 @@ h6 {
           font-weight: 600;
           font-family: "Ubuntu", sans-serif;
           text-transform: uppercase; }
+          .big-wrapper .price-section .price-table .package a.cta:hover {
+            background: #2f89e2;
+            text-decoration: none; }
           @media (min-width: 768px) and (max-width: 991px) {
             .big-wrapper .price-section .price-table .package a.cta {
               font-size: 10px; } }
@@ -5491,6 +5501,9 @@ h6 {
           font-weight: 600;
           font-family: "Ubuntu", sans-serif;
           text-transform: uppercase; }
+          .big-wrapper .price-section .price-table .package a.main-cta:hover {
+            background: #2f89e2;
+            text-decoration: none; }
           @media (min-width: 768px) and (max-width: 991px) {
             .big-wrapper .price-section .price-table .package a.main-cta {
               font-size: 10px; } }
@@ -5565,7 +5578,7 @@ h6 {
                 margin-right: 0px; } }
           .big-wrapper .footer-section .footer-wrapper .footer-menu .footer-nav ul li:first-child:before {
             content: none; }
-      .big-wrapper .footer-section .footer-wrapper .btn-cta {
+      .big-wrapper .footer-section .footer-wrapper a.btn-cta {
         background: none repeat scroll 0 0 #F6436B;
         color: white;
         font-family: "Ubuntu", sans-serif;
@@ -5575,8 +5588,10 @@ h6 {
         padding: 10px 40px;
         text-transform: uppercase;
         width: 200px; }
+        .big-wrapper .footer-section .footer-wrapper a.btn-cta:hover {
+          background: #2f89e2; }
         @media (max-width: 650px) {
-          .big-wrapper .footer-section .footer-wrapper .btn-cta {
+          .big-wrapper .footer-section .footer-wrapper a.btn-cta {
             font-size: 11px; } }
       .big-wrapper .footer-section .footer-wrapper .last-chance {
         text-align: right;
@@ -5596,7 +5611,7 @@ h6 {
         @media (max-width: 650px) {
           .big-wrapper .footer-section .footer-wrapper .last-chance {
             display: none; } }
-  .big-wrapper .btn-cta {
+  .big-wrapper a.btn-cta {
     background: none repeat scroll 0 0 #F6436B;
     color: white;
     font-family: "Ubuntu", sans-serif;
@@ -5605,8 +5620,10 @@ h6 {
     letter-spacing: 1px;
     padding: 10px 40px;
     text-transform: uppercase; }
+    .big-wrapper a.btn-cta:hover {
+      background: #2f89e2; }
     @media (max-width: 650px) {
-      .big-wrapper .btn-cta {
+      .big-wrapper a.btn-cta {
         font-size: 15px; } }
   .big-wrapper .hideme {
     opacity: 0; }
@@ -5615,7 +5632,7 @@ h6 {
     background: black; }
 
 #wrap .navi {
-  height: 106px;
+  height: 60px;
   padding-top: 11px;
   background: white; }
   @media (max-width: 650px) {
@@ -5631,22 +5648,421 @@ h6 {
     margin: 0 15px 0 0;
     position: relative;
     font-size: 15px; } }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 991px) {
   #wrap .navbar-nav {
     margin-left: auto;
     margin-right: auto;
-    width: 50%; }
+    width: 78%; }
+    #wrap .navbar-nav li.signup a {
+      background: #2f89e2;
+      color: white;
+      border-radius: 5px;
+      padding: 7px;
+      margin-top: 8px; }
+      #wrap .navbar-nav li.signup a:hover {
+        background: #f6436b;
+        color: white; }
+    #wrap .navbar-nav li a {
+      color: black; }
+      #wrap .navbar-nav li a:hover {
+        color: #f6436b; }
   #wrap .nav > li > a {
     display: block;
     margin: 0 15px 0 0;
     position: relative;
-    font-size: 18px; } }
+    font-size: 15px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #wrap .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; }
+    #wrap .navbar-nav li.signup a {
+      background: #2f89e2;
+      color: white;
+      border-radius: 5px;
+      padding: 7px;
+      margin-top: 8px; }
+      #wrap .navbar-nav li.signup a:hover {
+        background: #f6436b;
+        color: white; }
+    #wrap .navbar-nav li a {
+      color: black; }
+      #wrap .navbar-nav li a:hover {
+        color: #f6436b; }
+  #wrap .nav > li > a {
+    display: block;
+    margin: 0 15px 0 0;
+    position: relative;
+    font-size: 15px; } }
+@media (min-width: 1200px) {
+  #wrap .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; }
+    #wrap .navbar-nav li.signup a {
+      background: #2f89e2;
+      color: white;
+      border-radius: 5px;
+      padding: 7px;
+      margin-top: 8px; }
+      #wrap .navbar-nav li.signup a:hover {
+        background: #f6436b;
+        color: white; }
+    #wrap .navbar-nav li a {
+      color: black; }
+      #wrap .navbar-nav li a:hover {
+        color: #f6436b; }
+  #wrap .nav > li > a {
+    display: block;
+    margin: 0 15px 0 0;
+    position: relative;
+    font-size: 15px; } }
+
+.onepage .cancel {
+  display: block; }
+  .onepage .cancel a {
+    color: #a5b1bc;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: block; }
+    .onepage .cancel a:hover {
+      color: #f3446b;
+      text-decoration: none; }
+      .onepage .cancel a:hover span {
+        background: #f3446b;
+        color: black;
+        padding: 3px 7px;
+        border-radius: 30px; }
+    .onepage .cancel a span {
+      background: #a5b1bc;
+      color: black;
+      padding: 3px 7px;
+      border-radius: 30px; }
+      .onepage .cancel a span:hover {
+        background: #f3446b;
+        color: white; }
+.onepage .form-control {
+  font-size: 17px; }
+.onepage .signupstepone {
+  background: url("./images/register-background.jpg") no-repeat center center;
+  min-height: 967px;
+  padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 100px;
+  color: white; }
+  @media (max-width: 650px) {
+    .onepage .signupstepone {
+      min-height: 830px; } }
+  .onepage .signupstepone p {
+    color: #D2D2D2;
+    font-size: 21px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 32px 0 70px; }
+    @media (max-width: 650px) {
+      .onepage .signupstepone p {
+        margin: 32px 0 20px; } }
+  .onepage .signupstepone .form-control {
+    height: 53px; }
+  .onepage .signupstepone .has-error .help-block, .onepage .signupstepone .has-error .control-label, .onepage .signupstepone .has-error .radio, .onepage .signupstepone .has-error .checkbox, .onepage .signupstepone .has-error .radio-inline, .onepage .signupstepone .has-error .checkbox-inline {
+    border: 1px solid #FFADAB;
+    color: #FFADAB;
+    padding: 9px; }
+  .onepage .signupstepone form {
+    margin-top: 35px; }
+    .onepage .signupstepone form .form-cta {
+      background: none repeat scroll 0 0 #F6436B;
+      border: medium none;
+      float: right;
+      padding: 13px 34px; }
+  .onepage .signupstepone h3 {
+    font-family: 'Bad Script', cursive;
+    color: white;
+    font-size: 49px;
+    margin-top: 100px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .onepage .signupstepone h3 {
+        margin-top: 50px; } }
+    @media (max-width: 650px) {
+      .onepage .signupstepone h3 {
+        margin-top: 50px; } }
+.onepage .stepone {
+  background: #a5b1bc;
+  padding: 10px 13px;
+  color: #012f57;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px; }
+  .onepage .stepone span {
+    background: #f6436b;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 7px 15px;
+    color: white; }
+  .onepage .stepone .subtext {
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: -3px;
+    padding: 0; }
+.onepage .steptwo {
+  background: #1e71b4;
+  padding: 10px 13px;
+  color: #084c7b;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px; }
+  .onepage .steptwo span {
+    background: #084b7b;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 7px 15px;
+    color: #3796e9; }
+  .onepage .steptwo .subtext {
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: -3px;
+    padding: 0; }
+.onepage .stepthree {
+  background: #1e71b4;
+  padding: 10px 13px;
+  color: #084c7b;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px; }
+  .onepage .stepthree span {
+    background: #084b7b;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 7px 15px;
+    color: #3796e9; }
+  .onepage .stepthree .subtext {
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: -3px;
+    padding: 0; }
+.onepage .signupsteptwo {
+  background: url("./images/register-background.jpg") no-repeat center center;
+  min-height: 967px;
+  padding-top: 30px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white; }
+  @media (max-width: 650px) {
+    .onepage .signupsteptwo {
+      min-height: 1165px; } }
+  .onepage .signupsteptwo p {
+    color: #D2D2D2;
+    font-size: 21px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 32px 0 70px; }
+    @media (max-width: 650px) {
+      .onepage .signupsteptwo p {
+        margin: 32px 0 20px; } }
+  .onepage .signupsteptwo .form-control {
+    height: 53px; }
+  .onepage .signupsteptwo .has-error .help-block, .onepage .signupsteptwo .has-error .control-label, .onepage .signupsteptwo .has-error .radio, .onepage .signupsteptwo .has-error .checkbox, .onepage .signupsteptwo .has-error .radio-inline, .onepage .signupsteptwo .has-error .checkbox-inline {
+    border: 1px solid #FFADAB;
+    color: #FFADAB;
+    padding: 9px; }
+  .onepage .signupsteptwo form {
+    margin-top: 35px; }
+    .onepage .signupsteptwo form .form-cta {
+      background: none repeat scroll 0 0 #F6436B;
+      border: medium none;
+      float: right;
+      padding: 13px 34px; }
+  .onepage .signupsteptwo h3 {
+    font-family: 'Bad Script', cursive;
+    color: white;
+    font-size: 49px;
+    margin-top: 100px; }
+    @media (max-width: 650px) {
+      .onepage .signupsteptwo h3 {
+        margin-top: 50px; } }
+  .onepage .signupsteptwo .stepone {
+    background: #1e71b4;
+    padding: 10px 13px;
+    color: #084c7b;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px; }
+    .onepage .signupsteptwo .stepone span {
+      background: #084b7b;
+      -webkit-border-radius: 50px 50px 50px 50px;
+      border-radius: 50px 50px 50px 50px;
+      float: left;
+      margin: 0 15px 0 0;
+      padding: 7px 15px;
+      color: #3796e9; }
+    .onepage .signupsteptwo .stepone .subtext {
+      font-size: 12px;
+      font-weight: normal;
+      margin-top: -3px;
+      padding: 0; }
+  .onepage .signupsteptwo .steptwo {
+    background: #a5b1bc;
+    padding: 10px 13px;
+    color: #012f57;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px; }
+    .onepage .signupsteptwo .steptwo span {
+      background: #f6436b;
+      -webkit-border-radius: 50px 50px 50px 50px;
+      border-radius: 50px 50px 50px 50px;
+      float: left;
+      margin: 0 15px 0 0;
+      padding: 7px 15px;
+      color: white; }
+    .onepage .signupsteptwo .steptwo .subtext {
+      font-size: 12px;
+      font-weight: normal;
+      margin-top: -3px;
+      padding: 0; }
+.onepage .signupstepthree {
+  background: url("./images/register-background.jpg") no-repeat center center;
+  min-height: 967px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white; }
+  @media (max-width: 650px) {
+    .onepage .signupstepthree {
+      padding-bottom: 50px; } }
+  .onepage .signupstepthree p {
+    color: #D2D2D2;
+    font-size: 21px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 32px 0 70px; }
+    @media (max-width: 650px) {
+      .onepage .signupstepthree p {
+        margin: 32px 0 20px; } }
+  .onepage .signupstepthree h6 {
+    margin-top: 40px;
+    border: 1px solid #677274; }
+  .onepage .signupstepthree .creditcardinfo {
+    font-size: 15px;
+    color: #fff;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 20px; }
+  .onepage .signupstepthree .form-control {
+    height: 53px; }
+  .onepage .signupstepthree .has-error .help-block, .onepage .signupstepthree .has-error .control-label, .onepage .signupstepthree .has-error .radio, .onepage .signupstepthree .has-error .checkbox, .onepage .signupstepthree .has-error .radio-inline, .onepage .signupstepthree .has-error .checkbox-inline {
+    border: 1px solid #FFADAB;
+    color: #FFADAB;
+    padding: 9px; }
+  .onepage .signupstepthree form {
+    margin-top: 35px; }
+    .onepage .signupstepthree form .form-cta {
+      background: none repeat scroll 0 0 #F6436B;
+      border: medium none;
+      font-size: 20px;
+      margin-top: 20px;
+      padding: 20px 71px; }
+      @media (max-width: 650px) {
+        .onepage .signupstepthree form .form-cta {
+          padding: 20px 55px; } }
+  .onepage .signupstepthree h3 {
+    font-family: 'Bad Script', cursive;
+    color: white;
+    font-size: 49px;
+    margin-top: 100px; }
+    @media (max-width: 650px) {
+      .onepage .signupstepthree h3 {
+        margin-top: 50px; } }
+  .onepage .signupstepthree .giftcode {
+    margin-top: 50px; }
+  .onepage .signupstepthree .stepone {
+    background: #1e71b4;
+    padding: 10px 13px;
+    color: #084c7b;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px; }
+    .onepage .signupstepthree .stepone span {
+      background: #084b7b;
+      -webkit-border-radius: 50px 50px 50px 50px;
+      border-radius: 50px 50px 50px 50px;
+      float: left;
+      margin: 0 15px 0 0;
+      padding: 7px 15px;
+      color: #3796e9; }
+    .onepage .signupstepthree .stepone .subtext {
+      font-size: 12px;
+      font-weight: normal;
+      margin-top: -3px;
+      padding: 0; }
+  .onepage .signupstepthree .steptwo {
+    background: #1e71b4;
+    padding: 10px 13px;
+    color: #084c7b;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px; }
+    .onepage .signupstepthree .steptwo span {
+      background: #084b7b;
+      -webkit-border-radius: 50px 50px 50px 50px;
+      border-radius: 50px 50px 50px 50px;
+      float: left;
+      margin: 0 15px 0 0;
+      padding: 7px 15px;
+      color: #3796e9; }
+    .onepage .signupstepthree .steptwo .subtext {
+      font-size: 12px;
+      font-weight: normal;
+      margin-top: -3px;
+      padding: 0; }
+  .onepage .signupstepthree .stepthree {
+    background: #a5b1bc;
+    padding: 10px 13px;
+    color: #012f57;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px; }
+    .onepage .signupstepthree .stepthree span {
+      background: #f6436b;
+      -webkit-border-radius: 50px 50px 50px 50px;
+      border-radius: 50px 50px 50px 50px;
+      float: left;
+      margin: 0 15px 0 0;
+      padding: 7px 15px;
+      color: white; }
+    .onepage .signupstepthree .stepthree .subtext {
+      font-size: 12px;
+      font-weight: normal;
+      margin-top: -3px;
+      padding: 0; }
+  .onepage .signupstepthree .cc-money-back-seal {
+    margin-top: 40px; }
+  .onepage .signupstepthree .greatnews {
+    font-size: 15px; }
+  .onepage .signupstepthree .awesome {
+    font-family: 'Bad Script', cursive;
+    font-size: 25px; }
 
 .small-nav {
   background: rgba(255, 255, 255, 0.5); }
 
 .navbar-nav {
-  margin-top: 20px; }
+  margin-top: 5px; }
 
 .navbar-inverse {
   background: rgba(62, 195, 246, 0);
@@ -5675,7 +6091,7 @@ h6 {
   color: black;
   font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: lighter; }
   @media (max-width: 650px) {
     .navbar-inverse .navbar-nav > li > a {
@@ -5693,7 +6109,8 @@ h6 {
 .small-logo-container {
   padding-top: 50px;
   height: 50px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 0px; }
 
 .small-logo {
   color: white;
@@ -5701,13 +6118,27 @@ h6 {
   padding-bottom: 2px; }
 
 .big-logo-row {
-  background: white; }
+  background: white;
+  margin-top: -4px; }
   .big-logo-row .big-logo-container {
     padding-top: 0px; }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   color: #8F8F8F;
   background: none; }
+
+.scroll-top {
+  position: fixed;
+  bottom: 0;
+  right: 6%;
+  z-index: 100;
+  background: #f2f3f2;
+  font-size: 24px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; }
+
+.scroll-top a:link, .scroll-top a:visited {
+  color: #222; }
 
 @font-face {
   font-family: 'aliquamultralight';
