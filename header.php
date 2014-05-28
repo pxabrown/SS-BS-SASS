@@ -10,7 +10,7 @@
 <?php wp_title( ''); ?>
 </title>
 <meta name="viewport" content="width=device-width">
-<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon.ico">
+<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon.png">
 <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/apple-touch-icon.png">
 <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>-->
@@ -412,8 +412,8 @@
     <div class="form-group">
         <input type="password" class="form-control" name="password" placeholder="Password" />
     </div>
-    <button type="submit" name="submitButton" class="btn btn-primary form-cta">Continue</button>
-    <div class="clearfix"></div>
+    <button type="submit" name="submitButton" class="btn btn-primary btn-lg form-cta">Continue</button>
+
     <div class="pull-right cancel"><a href="#">Get me out of here <span>X</span></a></div>
 </div>
 </form>
@@ -479,8 +479,7 @@
         <input type="text" class="form-control" name="country" placeholder="Country" />
     </div>
 </div>
-    <button type="submit" name="submitButton" class="btn btn-primary form-cta">Continue</button>
-    <div class="clearfix"></div>
+    <button type="submit" name="submitButton" class="btn btn-primary btn-lg form-cta">Continue</button>
     <div class="pull-right cancel"><a href="#">Get me out of here <span>X</span></a></div>
 
 </div>
@@ -523,18 +522,29 @@
 <form>
 <div class="registerForm">
 <div class="row">
+<!-- GIFT CODE -->
+    <div class="row">
+        <div class="form-group col-md-5 centered giftcode">
+        <div class="">Have a Gift Code?</div>
+            <input type="text" class="form-control" name="giftcode" placeholder="Gift Code" />
+        </div>
+    </div>
+
 <div class="creditcardinfo">Please enter your credit card information </div>
 </div>    
 <div class="row">
     <div class="form-group col-md-6">
-        <input type="text" class="form-control" name="cc" placeholder="Credit Card Number" />
+<!--     <label class="cc" for="cc">Credit Card Number</label> -->
+        <input type="text" class="form-control" id="cc" name="cc" placeholder="Credit Card Number" />
     </div>
     <div class="form-group col-md-3">
-        <input type="text" class="form-control" name="securitycode" placeholder="Credit Card Code" />
+<!--     <label for="securitycode">Card Varification</label> -->
+        <input type="text" class="form-control" id="securitycode" name="securitycode" placeholder="Card Varification" />
     </div>
     
     <div class="form-group col-md-3">
-        <input type="text" class="form-control" name="expirydate" placeholder="Expiry Date" />
+<!--     <label for="expirydate">Experation Date</label> -->
+        <input type="text" class="form-control" id="expirydate" name="expirydate" placeholder="Experation Date" />
     </div>
     
     
@@ -546,14 +556,6 @@
         </div>
 <div class="clearfix"></div>
 <div class="greatnews"></div>
-
-<!-- GIFT CODE -->
-    <div class="row">
-        <div class="form-group col-md-4 centered giftcode">
-        <div class="">Have a Gift Code?</div>
-            <input type="text" class="form-control" name="giftcode" placeholder="Gift Code" />
-        </div>
-    </div>
 
 
 <!--     <div class="pull-right cancel"><a href="#">Get me out of here <span>X</span></a></div> -->
