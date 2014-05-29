@@ -7,17 +7,16 @@
 <head>
 <meta charset="utf-8">
 <title>
-Simply Studio - Smarter Studio Management
+<?php wp_title( ''); ?>
 </title>
 <meta name="viewport" content="width=device-width">
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon.png">
 <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/apple-touch-icon.png">
-<script src="//a.vimeocdn.com/js/froogaloop2.min.js"></script>
+<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>-->
-<link href='//fonts.googleapis.com/css?family=Ubuntu:400,500,400italic,300italic,300,500italic,700,700italic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic,300italic,300,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
-<?php // get options from theme $options=g et_option( 'theme_settings'); //show tracking code for the header echo stripslashes($options[ 'tracking']); ?>
 
 <!-- Google Analytics Tracking -->
 <script type="text/javascript">
@@ -59,12 +58,12 @@ Simply Studio - Smarter Studio Management
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a class="scroll-link" data-id="tour" href="#tour" onClick="exitSignup()">Tour</a> </li>
-          <li><a class="scroll-link hidden-xs" data-id="features" href="#features" onClick="exitSignup()">Features</a> </li>
-          <li><a class="scroll-link" data-id="pricing" href="#pricing" onClick="exitSignup()">pricing</a> </li>
-          <li><a class="scroll-link" data-id="faq" href="#faq" onClick="exitSignup()">FAQs</a> </li>
-          <li><a href="https://admin.simplystudio.com">Login</a> </li>
-          <li class="signup"><a href="#pricing" onClick="exitSignup()">Sign Up</a> </li>
+          <li><a class="scroll-link" data-id="tour" href="#tour">Tour</a> </li>
+          <li><a class="scroll-link hidden-xs" data-id="features" href="#features">Features</a> </li>
+          <li><a class="scroll-link" data-id="pricing" href="#pricing">pricing</a> </li>
+          <li><a class="scroll-link" data-id="faq" href="#faq">FAQs</a> </li>
+          <li><a href="#">Login</a> </li>
+          <li class="signup"><a href="#">Sign Up</a> </li>
         </ul>
       </div>
       <!--/.nav-collapse --> 
@@ -199,16 +198,13 @@ Simply Studio - Smarter Studio Management
           </div>
           <div class="clearfix"></div>
           <div class="col-xs-12 col-md-9 centered">
-	          <div class="count-down-price">
-	              <div class="clock"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/count-down-clock.png" alt=""></div>
-	              <div class="saleendsin">
-	              <div class="endsin">24 Hour $100 off Sale ends in:</div> 
-		              <span class="sale_hours">23</span><span class="timeframe">hrs.</span> 
-		              <span class="sale_minutes">50</span><span class="timeframe">min.</span> 
-		              <span class="sale_seconds">12</span><span class="timeframe">sec.</span>
-	              </div>
-	          </div>
+          <div class="count-down-price">
+              <div class="clock"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/count-down-clock.png" alt=""></div>
+              <div class="saleendsin">
+              <div class="endsin">24 Hour $100 off Sale ends in:</div> <span>23</span><span class="timeframe">hrs.</span> <span>50</span><span class="timeframe">min.</span> <span>12</span><span class="timeframe">sec.</span>
+              </div>
           </div>
+        </div>
           <div class="row price-table">
           <!-- SMALL PACKAGE -->
           <div class="col-md-4 col-sm-4">
@@ -217,32 +213,27 @@ Simply Studio - Smarter Studio Management
                   <div class="short-sale">
                   <div class="smallpack">24 hour sale get it now for</div>
                   </div>
-                  <!-- NONE-SALE PRICE -->
-                  <div class="none-sale-price" style="display:none;">
-                      <div class="big-price">
-                      <span class="money">$</span>299<span>/ yr</span>
-                  </div>
-                  </div>
-                  <!-- END NONE-SALE PRICE -->
-                  <!-- SALE PRICE -->
-                  <div class="sale-price">
                   <div class="big-price">
                       <span class="money">$</span>199<span>/ yr</span>
                   </div>
                   <div class="normal-price">
                      <strike>$299<span>/ yr</span> </strike>
                   </div>
-                  </div>
-                  <!-- END SALE PRICE -->
                   <a class="second-cta visible-xs" href="#" role="button">create Account</a>
                   <div class="moneyback visible-xs"> 15 DAY MONEY BACK guarantee</div>
 
                   </div>
                   <div class="package hidden-xs">
                       <ul>
-                        <li>Smart client & event management</li>
+                        <li>Client & Task management</li>
 
-                        <li>Online invoicing</li>
+                        <li>Keep track of client emails</li>
+                        
+                        <li>Assign workflows to events</li>
+                        
+                        <li>Online calendar</li>
+                        
+                        <li>Invoice clients / Get paid online</li>
                         
                         <li>Electronic contracts</li>
                         
@@ -250,7 +241,7 @@ Simply Studio - Smarter Studio Management
                         
                         <li>E-mail marketing</li>
                       </ul>
-                     <a class="cta" href="#" role="button" onClick="selectPackage('7')">create Account</a>
+                     <a class="cta" href="#" role="button">create Account</a>
                 </div>
                 <div class="moneyback hidden-xs"> 15 DAY MONEY BACK guarantee</div>
               </div>
@@ -264,36 +255,29 @@ Simply Studio - Smarter Studio Management
                   <h3>Studio Management 
                   <br>+ Accounting</h3>
                   <div class="popular">24 hour sale get it now for</div>
-                  <!-- NONE-SALE PRICE -->
-                  <div class="none-sale-price" style="display:none;">
-                      <div class="big-price">
-                      <span class="money">$</span>399<span>/ yr</span>
-                  </div>
-                  </div>
-                  <!-- END NONE-SALE PRICE -->
-                  <!-- SALE PRICE -->
-                  <div class="sale-price">
                    <div class="big-price">
                       <span class="money">$</span>299<span>/ yr</span>
                   </div>
                   <div class="normal-price">
                      <strike>$399<span>/ yr</span> </strike>
                   </div>
-                  </div>
-                  <!-- END SALE PRICE -->
                   <a class="main-cta visible-xs" href="#" role="button">create Account</a>
                   <div class="moneyback visible-xs"> 15 DAY MONEY BACK guarantee</div>
                   </div>
                   <div class="package hidden-xs">
                   <ul>
-                    <li>Studio Management</li>
-                    <li>PLUS</li>
-                    <li>Automatically import bank statements</li>
-                    <li>Categorize expenses</li>
+                    <li>Client & Task management</li>
+                    <li>Keep track of client emails</li>
+                    <li>Assign workflows to events</li>
+                    <li>Online calendar</li>
+                    <li>Invoice clients / Get paid online</li>
+                    <li>Electronic contracts</li>
+                    <li>Online questionnaires</li>
+                    <li>E-mail marketing</li>
                     <li>Keep track of accounts receivables</li>
                     <li>Run profit & loss reports</li>
                   </ul>
-                      <a class="main-cta" href="#" role="button"  onClick="selectPackage('8')">create Account</a>
+                      <a class="main-cta" href="#" role="button">create Account</a>
                   </div>
                   <div class="moneyback hidden-xs"> 15 DAY MONEY BACK guarantee</div>
                   </div>
@@ -308,42 +292,41 @@ Simply Studio - Smarter Studio Management
                   <br>+ Accounting 
                   <br>+ proofing</h3>
                   <div class="short-sale">
-                    <div class="big">24 hour sale get it now for</div>
-                    </div>
-                    <!-- NONE-SALE PRICE -->
-                  <div class="none-sale-price" style="display:none;">
-                      <div class="big-price">
-                      <span class="money">$</span>499<span>/ yr</span>
-                  </div>
-                  </div>
-                  <!-- END NONE-SALE PRICE -->
-                  <!-- SALE PRICE -->
-                  <div class="sale-price">
+                    <div class="big">24 hour sale get it now for</div></div>
                    <div class="big-price">
                       <span class="money">$</span>399<span>/ yr</span>
                   </div>
                   <div class="normal-price">
                      <strike>$499<span>/ yr</span> </strike>
                   </div>
-                  </div>
-                  <!-- END SALE PRICE -->
-
                   <a class="second-cta visible-xs" href="#" role="button">create Account</a>
                   <div class="moneyback visible-xs"> 15 DAY MONEY BACK guarantee</div>
 
                   </div>
                   <div class="package hidden-xs">
                     <ul>
-                        <li>Studio Management & Accounting</li>
-                        <li>PLUS</li>
+                        <li>Client & Task management</li>
+                        <li>Keep track of client emails</li>
+                        <li>Assign workflows to events</li>
+                        <li>Online calendar</li>
+                        <li>Invoice clients / Get paid online</li>
+                        <li>Electronic contracts</li>
+                        <li>Online questionnaires</li>
+                        <li>E-mail marketing</li>
+                        <li>Keep track of expenses</li>
+                        <li>Keep track of accounts receivables</li>
+                        <li>Run profit & loss reports</li>
                         <li>Allow clients to proof photos</li>
-                        <li>Setup pricing and packages</li>
-                        <li>Fulfill orders with Simply Color Lab</li>
+                        <li>Fulfill orders with  SimplyColor Lab</li>
                         <li>Self fulfill orders</li>
-                        <li>Create gift certificates & discounts</li>
+                        <li>Create gift certificates</li>
+                        <li>Setup pricing and packages</li>
+                        <li>Watermark images</li>
+                        <li>Unlimited storage</li>
                         <li>Sell Digital Downloads</li>
+                        <li>Set up coupon & volume discounts</li>
                     </ul>
-                      <a class="cta" href="#" role="button"  onClick="selectPackage('9')">create Account</a>
+                      <a class="cta" href="#" role="button">create Account</a>
                   </div>
                   <div class="moneyback hidden-xs">15 DAY MONEY BACK guarantee</div>
             </div>
@@ -413,7 +396,7 @@ Simply Studio - Smarter Studio Management
 </div>
 </div> <!-- END MAIN -->
 
-<div class="signupstepone" id="stepone" style="display:none">
+<div class="signupstepone" id="stepone">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -436,11 +419,11 @@ Simply Studio - Smarter Studio Management
 <!-- form: -->
 <div class="col-md-6 centered">
 <h3>Hey There!</h3>
-<p>Sign Up, it takes less than a minute to get started</p>
+<p>Sign Up, it takes less then a minute to get started</p>
 <form>
-<div class="form-stepone" id="steponevalid"><!-- FOFM 1 -->
+<div id="steponevalid">
     <div class="form-group">
-        <input type="text" class="form-control" id="fullname" name="name" placeholder="Full Name" />
+        <input type="text" class="form-control" name="username" placeholder="Full Name" />
     </div>
     <div class="form-group">
         <input type="text" class="form-control" name="email" placeholder="Email address" />
@@ -448,189 +431,16 @@ Simply Studio - Smarter Studio Management
     <div class="form-group">
         <input type="password" class="form-control" name="password" placeholder="Password" />
     </div>
-    
-    
-    <button type="button" name="submitButton" class="btn btn-primary btn-lg form-cta" onClick="infoScreen()">Continue</button>
-    
-<!--     <button type="submit" name="submitButton" class="btn btn-primary btn-lg form-cta" onClick="infoScreen()">Continue</button> -->
+    <button type="submit" name="submitButton" class="btn btn-primary btn-lg form-cta">Continue</button>
 
-    <div class="pull-right cancel"><a href="#pricing" onClick="exitSignup();">Get me out of here <span>X</span></a></div>
+    <div class="pull-right cancel"><a href="#">Get me out of here <span>X</span></a></div>
 </div>
 </form>
 </div>
-<!-- form: -->
-   </div>
-    </div>
-    </div>
-        
-</div>
-<div class="signupsteptwo" id="steptwo" style="display:none"><!-- STEP TWO -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-            <div class="col-md-4">
-            <div class="stepone"><span>1</span> Account
-                <div class="subtext">Basic Account Info</div>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="steptwo"><span>2</span> personal
-                <div class="subtext">personal details</div>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="stepthree"><span>3</span> payment
-                <div class="subtext">Select method</div>
-            </div>
-            </div>
-            <div class="clearfix"></div>
-<!-- form: -->
-<div class="col-md-8 centered">
-<h3><span id="firstname_header"></span>, welcome!</h3>
-<p>We're thrilled you've decided to sign-up for Simply Studio. To make sure we get your account started right, we just need a little bit more information.</p>
-<form>
-<div class="registerForm" id="steptwovalid"><!-- FORM 2 -->
-
-    <div class="form-group">
-        <input type="text" class="form-control" name="phone" placeholder="Phone" />
-    </div>
-
-    <div class="form-group">
-        <input type="text" class="form-control" name="account_name" placeholder="Company Name" />
-    </div>
-    
-    <div class="form-group">
-        <input type="text" class="form-control" name="address1" placeholder="Address" />
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control" name="city" placeholder="City" />
-    </div>
-
-<div class="row">
-    <div class="form-group col-md-3">
-        <input type="text" class="form-control" name="state" placeholder="State" />
-    </div>
-    <div class="form-group  col-md-3">
-        <input type="text" class="form-control" name="zip" placeholder="Zip/Postal Code" />
-    </div>
-    
-    <div class="form-group col-md-6">
-        <input type="text" class="form-control" name="country" value="USA" />
-    </div>
-</div>
-    <button type="button" name="submitButton" class="btn btn-primary btn-lg form-cta" onClick="paymentScreen()">Continue</button>
-    
-    <div class="pull-right cancel"><a href="#pricing" onClick="exitSignup();">Get me out of here <span>X</span></a></div>
-
-</div>
-</form>
-</div>
-
-
-<!-- form: -->
-
-   </div>
-    </div>
-    </div>
-        
-</div>
-
-
-<div class="signupstepthree" id="stepthree" style="display:none"><!-- STEP THREE -->
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-12">
-            <div class="col-md-4">
-            <div class="stepone"><span>1</span> Account
-                <div class="subtext">Basic Account Info</div>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="steptwo"><span>2</span> personal
-                <div class="subtext">personal details</div>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="stepthree"><span>3</span> payment
-                <div class="subtext">Select method</div>
-            </div>
-            </div>
-            <div class="clearfix"></div>
-<!-- form: -->
-<div class="col-md-8 centered">
-<h3>Yay! You're almost done!</h3>
-<p>Great news! Buying "<span class="selected_package_name"></span>" now, gets you $100 off so you'll pay only $<span class="selected_package_sale_price"></span>. Awesome!</p>
-
-<form>
-<div class="registerForm" id="stepthreevalid"><!-- FORM THREE -->
-<div class="row">
-
-<div class="creditcardinfo">Please enter your credit card information </div>
-</div>    
-<div class="row">
-    <div class="form-group col-md-6">
-<!--     <label class="cc" for="cc">Credit Card Number</label> -->
-        <input type="text" class="form-control" id="cc" name="cc_number" x-autocompletetype="cc-number" placeholder="Credit Card Number" />
-    </div>
-    <div class="form-group col-md-3">
-<!--     <label for="securitycode">Card Varification</label> -->
-        <input type="text" class="form-control" id="securitycode" name="cc_cardcode" x-autocompletetype="verification" placeholder="Card Verification" />
-    </div>
-    
-    <div class="form-group col-md-3">
-<!--     <label for="expirydate">Experation Date</label> -->
-        <input type="text" class="form-control" id="expirydate" name="cc_expiry" placeholder="Expiration Date" />
-    </div>
-    <div class="clearfix"></div>
-    <!-- GIFT CODE -->
-    <div class="row">
-        <div class="form-group col-md-5 centered giftcode">
-        
-        <button type="button" class="btn btn-gcode" data-toggle="collapse" data-target="#gcode">
-  Have a Gift Code?
-</button>
-
-<div id="gcode" class="collapse">
-
-<input type="text" class="form-control" name="giftcode" placeholder="Gift Code" /></div>
-
-            
-        </div>
-    </div>
-    </div>
-</div>
-        <div class="form-group">
-            <button type="submit" name="submitButton" class="btn btn-primary form-cta">Create Account!</button>
-        </div>
-<div class="clearfix"></div>
-<!--     <div class="pull-right cancel"><a href="#">Get me out of here <span>X</span></a></div> -->
-</div>
-</form>
-</div>
-
-
-<!-- form: -->
-<div class="clearfix"></div>
-<h6></h6>
-<div class="cc-money-back-seal centered"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cc-money-back-seal.png" alt="SimplyStudio"</div>
-
 <!-- FORM VALIDATION -->
-
-
-
-<!-- form: -->
-
-
-
-
 <script>
-jQuery(document).ready(function($) {
-
-
-	//checkSale();
-	
-    $('#steponevalid').bootstrapValidator({ // FORM STEP ONE
+$(document).ready(function() {
+    $('#steponevalid').bootstrapValidator({
         message: 'This value is not valid',
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
@@ -638,7 +448,7 @@ jQuery(document).ready(function($) {
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-            'name': {
+            username: {
                 message: 'The username is not valid',
                 validators: {
                     notEmpty: {
@@ -670,7 +480,7 @@ jQuery(document).ready(function($) {
                 }
             },
 
-            'email': {
+            email: {
                 validators: {
                     notEmpty: {
                         message: 'The email is required and cannot be empty'
@@ -682,288 +492,159 @@ jQuery(document).ready(function($) {
             }
         }
     });
- 
-    
-    
-    $('#steptwovalid').bootstrapValidator({ // form 2
-        message: 'This value is not valid',
-        feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            'phone': {
-                    validators: {
-                        notEmpty: {
-                            message: 'The phone number is required'
-                        },
-                        digits: {
-                            message: 'The phone number is not valid'
-                        }
-                    }
-                },            
-                'account_name': {
-                message: 'The Company Name is not valid',
-                validators: {
-                    notEmpty: {
-                        message: 'The Company Name is required and cannot be empty'
-                    },
-                }
-            },
-            
-            'address1': {
-                message: 'The Address is not valid',
-                validators: {
-                    notEmpty: {
-                        message: 'Your Address is required and cannot be empty'
-                    },
-                }
-            },
-            
-            'city': {
-                message: 'The city is not valid',
-                validators: {
-                    notEmpty: {
-                        message: 'Your city is required and cannot be empty'
-                    },
-                }
-            },
-            
-            'state': {
-                message: 'The state is not valid',
-                validators: {
-                    notEmpty: {
-                        message: 'Your state is required and cannot be empty'
-                    },
-                }
-            },
-            
-            'zip': {
-                message: 'The zip is not valid',
-                validators: {
-                    notEmpty: {
-                        message: 'Your zip is required and cannot be empty'
-                    },
-                }
-            },
-        }
-    });
-    
-    
-    $('#stepthreevalid').bootstrapValidator({ // form 3
-        message: 'This value is not valid',
-        feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            'cc_number': {
-                validators: {
-                    creditCard: {
-                        message: 'The credit card number is not valid'
-                    }
-                }
-            },
-            'cc_cardcode': {
-                message: 'The Card Verification is not valid',
-                validators: {
-                    notEmpty: {
-                        message: 'The Card Verification is required and cannot be empty'
-                    },
-                }
-            },
-            
-            'cc_expiry': {
-                message: 'The Expiration Date is not valid',
-                validators: {
-                    notEmpty: {
-                        message: 'Your Expiration Date is required and cannot be empty'
-                    },
-                }
-            },
-        }
-    });
-
-
-
-    
-    $("#register-form").submit(function (e) {
-
-        // Clear error fields the very first thing
-        $('#form_errors').hide();
-
-        var url = "https://www.simplystudio.com/signup/new",
-            data = { 
-            			tz_offset: '-06:00',
-            			billing_interval: 'yearly',
-            			prepay : true
-             };
-
-        data.modules = [];
-            
-        // Get all fields from the form
-        $.each($('.form-control').serializeArray(), function (i, field) {
-            if ( field.name !== 'plan' ) {
-                data[field.name] = field.value;
-            }
-        });
-
-
-        if(data['cc_expiry'].length == 4)
-            data['cc_expiry'] = data['cc_expiry'].substring(0,2) + "/" + data['cc_expiry'].substring(2,4);
-
-        data = JSON.stringify(data);
-         _gaq.push(['_trackEvent', 'Signup', 'Submit']);
-
-        var orig_submit_val = $('#submit').val();
-        $("#submit").val("Processing ... ");
-        jQuery.ajax({
-            type: 'POST',
-            contentType: 'application/json',
-            url: url,
-            data: data,
-            processData: false
-        }).done(function () {
-             _gaq.push(['_trackEvent', 'Signup', 'Success'], function() {
-                 setTimeout("location = 'https://www.simplystudio.com/success.html'",1000);
-             });
-        }).error(function (jqxhr, s, ex) {
-
-             _gaq.push(['_trackEvent', 'Signup', 'Failure']);
-
-            $('#form_errors').show();
-
-            // Clear error fields after resubmission as well
-            $('.field_error').html('').addClass('displayNone');
-
-            // revert button text
-            $("#submit").val(orig_submit_val);
-
-            var error = {};
-            try {
-                error = JSON.parse(jqxhr.responseText).error;
-            } catch (err) {}
-
-            if (typeof error === 'string') {
-                alert(error);
-                return;
-            }
-
-            for (var key in error) {
-                if (error.hasOwnProperty(key)) {
-                    $('#err_' + key).html(error[key]).removeClass('displayNone');
-                }
-            }
-
-            try {
-              throw new Error("Signup Failure");
-            } catch (e) {
-              _errs.meta = error;
-              _errs.push(e);
-              throw e;
-            }
-
-        });
-
-        return false;
-    });    
 });
+</script>
 
-var sale = true;
-function checkSale()
-{
-	var sales_cookie = $.cookie('24hoursale');
-	
-	var expiration_date = Date.parse('now').add(1).days();
-	if(sales_cookie)
-		expiration_date = Date.parse(sales_cookie);
-	
-	if(expiration_date.isAfter(Date.parse('now')))
-		countdownSale(expiration_date);
-	else
-	{
-		sale = false;
-		$('.count-down-price').hide();
-	}
-}
 
-var countdownInterval;
-function countdownSale(expiration_date)
-{
-	var remaining_time = (expiration_date.getTime() - Date.parse('now').getTime())/1000;
-	var hours = Math.floor(remaining_time / 3600);
-	var minutes = Math.floor((remaining_time - (3600 * hours))/60);
-	var seconds = Math.floor((remaining_time - (3600 * hours) -  (60 * minutes)));
 
-	$('.sale_hours').html(hours);
-	$('.sale_minutes').html(minutes);
-	$('.sale_seconds').html(seconds);
+<!-- form: -->
+   </div>
+    </div>
+    </div>
+        
+</div>
+<div class="signupsteptwo" id="steptwo"><!-- STEP TWO -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="col-md-4">
+            <div class="stepone"><span>1</span> Account
+                <div class="subtext">Basic Account Info</div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="steptwo"><span>2</span> personal
+                <div class="subtext">personal details</div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="stepthree"><span>3</span> payment
+                <div class="subtext">Select method</div>
+            </div>
+            </div>
+            <div class="clearfix"></div>
+<!-- form: -->
+<div class="col-md-8 centered">
+<h3>Okay, Full Name</h3>
+<p>That was quick! But, before you're done we just need some more details about you to create your account.</p>
+<form>
+<div class="registerForm">
 
-	if(!countdownInterval)
-		countdownInterval = setInterval(function(){ countdownSale(expiration_date) }, 1000);
-		
-	$.cookie('24hoursale', expiration_date.toString('F'));	
-	sale = (expiration_date.isAfter(Date.parse('now')));
-	
-}
+    <div class="form-group">
+        <input type="text" class="form-control" name="phone" placeholder="Phone" />
+    </div>
+<!--
+    <div class="form-group">
+        <input type="text" class="form-control" name="companyname" placeholder="Company Name" />
+    </div>
+-->
+    
+    <div class="form-group">
+        <input type="text" class="form-control" name="address" placeholder="Address" />
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" name="city" placeholder="City" />
+    </div>
 
-var selectedPackageID;
-var packageSettings = {
-	'7' : {
-		'name' : 'Studio Management',
-		'sale_price' : '299',
-		'regular_price' : '399'
-	},
-	'8' : {
-		'name' : 'Studio Management and Accounting',
-		'sale_price' : '399',
-		'regular_price' : '499'
-	},
-	'9' : {
-		'name' : 'Studio Management, Accounting and Proofing',
-		'sale_price' : '499',
-		'regular_price' : '599'
-	}
-};
+<div class="row">
+    <div class="form-group col-md-3">
+        <input type="text" class="form-control" name="state" placeholder="State" />
+    </div>
+    <div class="form-group  col-md-3">
+        <input type="text" class="form-control" name="zip" placeholder="Zip/Postal Code" />
+    </div>
+    
+    <div class="form-group col-md-6">
+        <input type="text" class="form-control" name="country" placeholder="Country" />
+    </div>
+</div>
+    <button type="submit" name="submitButton" class="btn btn-primary btn-lg form-cta">Continue</button>
+    <div class="pull-right cancel"><a href="#">Get me out of here <span>X</span></a></div>
 
-function selectPackage(packageID)
-{
-	selectedPackageID = packageID;
-	$('#wrapper').hide();
-	$('#stepone').fadeIn();
-}
+</div>
+</form>
+</div>
+<!-- form: -->
 
-function infoScreen()
-{
-	var fullname = $('#fullname').val();
-	var firstSpace = fullname.indexOf(" ");
-	if(firstSpace <= 0)
-		firstSpace = fullname.length;
-	var firstname = fullname.substring(0, firstSpace);
-	
-	$("#firstname_header").html(firstname);
-	$('#wrapper, #stepone').hide();
-	$('#steptwo').fadeIn();
-}
+   </div>
+    </div>
+    </div>
+        
+</div>
 
-function paymentScreen()
-{
-	$('.selected_package_name').html( packageSettings[selectedPackageID].name );
-	$('.selected_package_sale_price').html( packageSettings[selectedPackageID].sale_price );
 
-	$('#wrapper, #stepone, #steptwo').hide();
-	$('#stepthree').fadeIn();
-}
+<div class="signupstepthree" id="stepthree"><!-- STEP THREE -->
+    <div class="container">
+        <div class="row">
 
-function exitSignup()
-{
-	$('#stepone, #steptwo, #stepthree').hide();
-	$('#wrapper').fadeIn();
-}
+            <div class="col-md-12">
+            <div class="col-md-4">
+            <div class="stepone"><span>1</span> Account
+                <div class="subtext">Basic Account Info</div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="steptwo"><span>2</span> personal
+                <div class="subtext">personal details</div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="stepthree"><span>3</span> payment
+                <div class="subtext">Select method</div>
+            </div>
+            </div>
+            <div class="clearfix"></div>
+<!-- form: -->
+<div class="col-md-8 centered">
+<h3>Yay! You're almost done!</h3>
+<p>Great news! Buying "package A" now, gets you $100 off so you'll pay only $299 Awesome!</p>
+<form>
+<div class="registerForm">
+<div class="row">
+<!-- GIFT CODE -->
+    <div class="row">
+        <div class="form-group col-md-5 centered giftcode">
+        <div class="">Have a Gift Code?</div>
+            <input type="text" class="form-control" name="giftcode" placeholder="Gift Code" />
+        </div>
+    </div>
 
-    </script>
+<div class="creditcardinfo">Please enter your credit card information </div>
+</div>    
+<div class="row">
+    <div class="form-group col-md-6">
+<!--     <label class="cc" for="cc">Credit Card Number</label> -->
+        <input type="text" class="form-control" id="cc" name="cc" placeholder="Credit Card Number" />
+    </div>
+    <div class="form-group col-md-3">
+<!--     <label for="securitycode">Card Varification</label> -->
+        <input type="text" class="form-control" id="securitycode" name="securitycode" placeholder="Card Varification" />
+    </div>
+    
+    <div class="form-group col-md-3">
+<!--     <label for="expirydate">Experation Date</label> -->
+        <input type="text" class="form-control" id="expirydate" name="expirydate" placeholder="Experation Date" />
+    </div>
+    
+    
+    
+    </div>
+</div>
+        <div class="form-group">
+            <button type="submit" name="submitButton" class="btn btn-primary form-cta">Create Account!</button>
+        </div>
+<div class="clearfix"></div>
+<div class="greatnews"></div>
+
+
+<!--     <div class="pull-right cancel"><a href="#">Get me out of here <span>X</span></a></div> -->
+</div>
+</form>
+</div>
+<!-- form: -->
+<div class="clearfix"></div>
+<h6></h6>
+<div class="cc-money-back-seal centered"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cc-money-back-seal.png" alt="SimplyStudio"</div>
 
 
 
