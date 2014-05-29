@@ -8,8 +8,6 @@ Backend Functions
  * Customize Contact Methods
  * @since 1.0.0
  *
- * @author Bill Erickson
- * @link http://sillybean.net/2010/01/creating-a-user-directory-part-1-changing-user-contact-fields/
  *
  * @param array $contactmethods
  * @return array
@@ -50,14 +48,6 @@ function mb_widgets_init() {
 }
 
 /**
- * Don't Update Theme
- * @since 1.0.0
- *
- * If there is a theme in the repo with the same name,
- * this prevents WP from prompting an update.
- *
- * @author Mark Jaquith
- * @link http://markjaquith.wordpress.com/2009/12/14/excluding-your-plugin-or-theme-from-update-checks/
  *
  * @param array $r, request arguments
  * @param string $url, request url
@@ -163,6 +153,7 @@ function mb_scripts() {
 		
 		if (!is_admin()) add_action("wp_enqueue_scripts", "custom_jquery_enqueue", 11);
         function custom_jquery_enqueue() {
+        
         //LOAD JQUERY
         wp_deregister_script('jquery');
         wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js", false, null);
